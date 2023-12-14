@@ -3,3 +3,77 @@ body {
     line-height: 1.6;
     color: #333;
 }
+
+.red {
+    background-color: red;
+}
+
+#page1,
+#page2,
+#page3 {
+    border: 2px solid black;
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#page1 h2,
+#page2 h2,
+#page3 h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.img-option {
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 150px; 
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 0.5rem; 
+}
+
+#page1 h3 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.3em 0.6em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.selection-option {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding-bottom: 1rem; 
+}
+
+.selection-option:hover {
+    transform: scale(1.05);
+
+}
+
+.selection-option.selected {
+    border: 3px solid #4CAF50;
+    
+    border-radius: 10px;
+}
+
+/* Page 2 */
+
+.continent-image {
+    max-width: 150px; 
+    height: auto; 
+}
+
+.continent-label {
+    font-size: 1rem; 
+    color: #333; 
+    margin-top: 0.5rem; 
+}
+
