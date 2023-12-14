@@ -40,3 +40,8 @@ footer {
     word-wrap: break-word;
     white-space: normal;
 }
+
+/* js controlled styles */
+.display-none {
+    display: none;
+}
