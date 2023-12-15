@@ -87,7 +87,6 @@ $(document).ready(function () {
 
 
     // EmailJS script:
-
     (function () {
         // https://dashboard.emailjs.com/admin/account
         emailjs.init('eE_kGwavkK_CYEjee');
