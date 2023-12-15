@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Javascript -->
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
@@ -22,7 +24,132 @@
 
     <!-- Main Section -->
     <main>
-        <h1>Hello World!</h1>
+        <div class="container-fluid">
+        <div class="row">
+
+            <!-- Image Column: Santa and Christmas Tree -->
+            <div class="col-md-5 d-none d-md-flex red">
+                <h2>Santa and everything else is over here!</h2>
+                <!-- This is just space I have given to where the santa and christmas tree will be in the background that will be removed later -->
+            </div>
+
+            <!-- Content Column: Contains the pages for the app -->
+            <div class="col-12 col-md-7 align-items-center min-vh-100">
+
+                <!-- Page 1 -->
+                <div id="page1"
+                    class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
+                    <h2>Select the monetary value of your gift</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                            <div class="selection-option d-flex flex-column align-items-center" data-value="1">
+                                <img src="/assets/images/noimage.png" alt="Coal" class="img-option">
+                                <h3>$</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                            <div class="selection-option d-flex flex-column align-items-center" data-value="2">
+                                <img src="/assets/images/noimage.png" alt="Console" class="img-option">
+                                <h3>$$</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                            <div class="selection-option d-flex flex-column align-items-center" data-value="3">
+                                <img src="/assets/images/noimage.png" alt="Sports Car" class="img-option">
+                                <h3>$$$</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Page 2 -->
+                <div id="page2"
+                    class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
+                    <h2>Which country would you like to exchange gifts with?</h2>
+                    <div class="row justify-content-center">
+                        <!-- North America -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-1 order-md-6 order-6">
+                            <div class="selection-option" data-value="north-america">
+                                <img src="/assets/images/noimage.png" alt="North America"
+                                    class="img-option continent-image">
+                                <p class="continent-label">North America</p>
+                            </div>
+                        </div>
+                        <!-- Europe -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-2 order-md-1 order-1">
+                            <div class="selection-option" data-value="europe">
+                                <img src="/assets/images/noimage.png" alt="Europe" class="img-option continent-image">
+                                <p class="continent-label">Europe</p>
+                            </div>
+                        </div>
+                        <!-- Asia -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-3 order-md-4 order-3">
+                            <div class="selection-option" data-value="asia">
+                                <img src="/assets/images/noimage.png" alt="Asia" class="img-option continent-image">
+                                <p class="continent-label">Asia</p>
+                            </div>
+                        </div>
+                        <!-- South America -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-4 order-md-2 order-7">
+                            <div class="selection-option" data-value="south-america">
+                                <img src="/assets/images/noimage.png" alt="South America"
+                                    class="img-option continent-image">
+                                <p class="continent-label">South America</p>
+                            </div>
+                        </div>
+                        <!-- Africa -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-5 order-md-3 order-2">
+                            <div class="selection-option" data-value="africa">
+                                <img src="/assets/images/noimage.png" alt="Africa" class="img-option continent-image">
+                                <p class="continent-label">Africa</p>
+                            </div>
+                        </div>
+                        <!-- Oceania -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-6 order-md-5 order-4">
+                            <div class="selection-option" data-value="oceania">
+                                <img src="/assets/images/noimage.png" alt="oceania"
+                                    class="img-option continent-image">
+                                <p class="continent-label">Oceania</p>
+                            </div>
+                        </div>
+                        <!-- Antarctica -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-7 order-md-7 order-5">
+                            <div class="selection-option" data-value="antarctica">
+                                <img src="/assets/images/noimage.png" alt="Antarctica"
+                                    class="img-option continent-image">
+                                <p class="continent-label">Antarctica</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Page 3 -->
+                <div id="page3"
+                    class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
+                    <h2>Thank you for sending us your wonderful gift. Here is what we would like to give you in return!
+                    </h2>
+                    <p>Click the elf to unwrap your present</p>
+                    <div class="row justify-content-center">
+                        <!-- Elf Image -->
+                        <div class="col-md-6 col-sm-12 text-center">
+                            <div class="selection-option" data-value="elf">
+                                <img src="/assets/images/noimage.png" alt="Elf" class="img-fluid img-option">
+                            </div>
+                        </div>
+                        <!-- Gift Image -->
+                        <div class="col-md-6 col-sm-12 text-center">
+                            <div class="selection-option" data-value="gift">
+                                <img src="/assets/images/noimage.png" alt="Gift" class="img-fluid img-option">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         
         <!-- placeholder html to test javascript working -->
         <div id="container">
@@ -52,4 +179,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
