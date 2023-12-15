@@ -8,6 +8,7 @@
 }
 
 /* General Styles */
+
 body {
     background: radial-gradient(circle, rgb(230, 9, 9) 0%, rgb(31, 2, 2) 100%);
     width: 100vw;
@@ -121,3 +122,102 @@ footer {
     margin-top: 0.5rem; 
 }
 
+/* new */
+/* @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&display=swap'); */
+
+
+body {
+    background: radial-gradient(circle, rgb(230, 9, 9) 0%, rgb(31, 2, 2) 100%);
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+h1{
+    font-family: 'Chewy', arial, sans-serif;
+}
+
+/* landing page */
+.santa-image{
+    padding-left: 50px;
+    height: 710px;
+}
+
+.cercle {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.align {
+    text-align: center;
+}
+
+.button-21 {
+    width: 130px;
+    align-items: center;
+    appearance: none;
+    background-color: #3EB2FD;
+    background-image: linear-gradient(1deg, #ff5e00, #fff702 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #0e064c;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd, sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s, background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+    outline: none;
+}
+
+.button-21:hover {
+    background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+.hidden {
+    display: none;
+}
+
+.square {
+    border-radius: 0; /* Removes the rounded corners */
+}
