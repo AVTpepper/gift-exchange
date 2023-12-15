@@ -1,6 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&display=swap');
 
 
+/* Override defaults */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* General Styles */
+
+body {
+    background: radial-gradient(circle, rgb(230, 9, 9) 0%, rgb(31, 2, 2) 100%);
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    width: 100%;
+}
+
+/* Header Section */
+header {
+    
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* js controlled styles */
+.display-none {
+    display: none;
+}
+
+.red {
+    background-color: red;
+}
+
+#page1,
+#page2,
+#page3,
+#landing-page {
+    border: 2px solid black;
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#page1 h2,
+#page2 h2,
+#page3 h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.img-option {
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 150px; 
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 0.5rem; 
+}
+
+#page1 h3 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.3em 0.6em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.selection-option {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding-bottom: 1rem; 
+}
+
+.selection-option:hover {
+    transform: scale(1.05);
+
+}
+
+.selection-option.selected {
+    border: 3px solid #4CAF50;
+    
+    border-radius: 10px;
+}
+
+/* Page 2 */
+
+.continent-image {
+    max-width: 150px; 
+    height: auto; 
+}
+
+.continent-label {
+    font-size: 1rem; 
+    color: #333; 
+    margin-top: 0.5rem; 
+}
+
+/* new */
+/* @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&display=swap'); */
+
+
 body {
     background: radial-gradient(circle, rgb(230, 9, 9) 0%, rgb(31, 2, 2) 100%);
     width: 100vw;
@@ -24,19 +149,21 @@ h1{
     font-family: 'Chewy', arial, sans-serif;
 }
 
+/* landing page */
 .santa-image{
-    padding-left:60px;
-    height: 800px;
+    padding-left: 50px;
+    height: 710px;
 }
 
 .cercle {
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.3);
-    width: 600px;
-    height: 600px;
-    border-radius: 90%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
 }
 
 .align {
@@ -86,3 +213,50 @@ h1{
 .button-21:focus:not(:active) {
     box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
 }
+
+.hidden {
+    display: none;
+}
+
+.square {
+    border-radius: 0; /* Removes the rounded corners */
+}
+
+.button-21:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+  .intro,
+  .intro ab{
+    color:#fff;
+  }
+  
+  /* customizable snowflake styling */
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+  }
+  
+  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+  @-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);
+    transform:translateX(0px)}50%{-webkit-transform:translateX(80px);
+        transform:translateX(80px)}100%{-webkit-transform:translateX(0px);
+            transform:translateX(0px)}}
+    @keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+    @keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+  
+    /* Demo Purpose Only*/
+  .demo {
+    font-family: 'Raleway', sans-serif;
+      color:#fff;
+      display: block;
+      margin: 0 auto;
+      padding: 15px 0;
+      text-align: center;
+  }
+  .demo a{
+    font-family: 'Raleway', sans-serif;
+  color: #000;		
+  }
