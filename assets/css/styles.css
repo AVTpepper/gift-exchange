@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&display=swap');
+
+
 /* Override defaults */
 * {
     padding: 0;
@@ -5,12 +8,16 @@
 }
 
 /* General Styles */
-/* body {
+
+body {
+    background: radial-gradient(circle, rgb(230, 9, 9) 0%, rgb(31, 2, 2) 100%);
+    width: 100vw;
+    height: 100vh;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #e6e6e6
-} */
+    width: 100%;
+}
 
 /* Header Section */
 header {
@@ -47,7 +54,8 @@ footer {
 
 #page1,
 #page2,
-#page3 {
+#page3,
+#landing-page {
     border: 2px solid black;
     margin: 4rem;
     padding: 2rem;
