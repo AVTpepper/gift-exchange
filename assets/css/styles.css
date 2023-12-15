@@ -44,9 +44,9 @@ footer {
 }
 
 /* js controlled styles */
-.display-none {
+/* .display-none {
     display: none;
-}
+} */
 
 .red {
     background-color: red;
@@ -64,12 +64,20 @@ footer {
     background-color: white;
 }
 
+#page1,
+#page2,
+#page3 {
+
+    display: none; 
+}
+
 #page1 h2,
 #page2 h2,
 #page3 h2 {
     color: #333;
     font-size: 24px;
     margin-bottom: 1rem;
+    
 }
 
 .img-option {
@@ -122,9 +130,6 @@ footer {
     margin-top: 0.5rem; 
 }
 
-/* new */
-/* @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&display=swap'); */
-
 
 body {
     background: radial-gradient(circle, rgb(230, 9, 9) 0%, rgb(31, 2, 2) 100%);
@@ -139,9 +144,9 @@ body {
 
 .main-container {
     color: #fff;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     height: 100vh;
     width: 100%;
 }
@@ -150,9 +155,13 @@ h1{
 }
 
 /* landing page */
+#landing-page{
+    margin-top: 15rem;
+}
+
 .santa-image{
     padding-left: 50px;
-    height: 710px;
+    height: 715px;
 }
 
 .cercle {
@@ -183,7 +192,7 @@ h1{
     box-sizing: border-box;
     color: #0e064c;
     cursor: pointer;
-    display: inline-flex;
+    /* display: inline-flex; */
     font-family: CircularStd, sans-serif;
     font-size: 1rem;
     height: auto;
@@ -212,12 +221,4 @@ h1{
 
 .button-21:focus:not(:active) {
     box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
-}
-
-.hidden {
-    display: none;
-}
-
-.square {
-    border-radius: 0; /* Removes the rounded corners */
 }

@@ -63,3 +63,40 @@ $(document).ready(function() {
     $('#page-three-back-button').on('click', loadPageTwo);
 
 });
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const giftButton = document.getElementById('gift-button');
+    const page1 = document.getElementById('page1');
+    const page2 = document.getElementById('page2');
+    const page3 = document.getElementById('page3');
+    const landingPage = document.getElementById('landing-page');
+    const page1Images = page1.getElementsByClassName('selection-option');
+    const page2Images = page2.getElementsByClassName('selection-option');
+
+    // Show Page 1 when Gift button is clicked
+    giftButton.addEventListener('click', function() {
+        landingPage.style.display = 'none';
+        page1.style.display = 'block';
+    });
+
+    // Function to hide current page and show next page
+    function changePage(currentPage, nextPage) {
+        currentPage.style.display = 'none';
+        nextPage.style.display = 'block';
+    }
+
+    // For each image on Page 1, add click event to show Page 2
+    Array.from(page1Images).forEach(function(image) {
+        image.addEventListener('click', function() {
+            changePage(page1, page2);
+        });
+    });
+
+    // For each image on Page 2, add click event to show Page 3
+    Array.from(page2Images).forEach(function(image) {
+        image.addEventListener('click', function() {
+            changePage(page2, page3);
+        });
+    });
+});

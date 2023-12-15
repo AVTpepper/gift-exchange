@@ -28,28 +28,28 @@
 
         <div class="container-fluid">
             <div class="row">
-
-
                 <!-- Image Column: Santa and Christmas Tree -->
-                <div class="col-md-5 d-none d-md-flex flex-column align-items-center justify-content-center">
-                    <h2>Santa and everything else is over here!</h2>
-                    <img src="assets/images/santa.png" alt="Santa" class="img-fluid">
+                <!-- d-md-flex removed-->
+                <div class="col-md-5 d-none d-md-flex  flex-column align-items-center justify-content-center">
+                    <!-- <h2>Santa and everything else is over here!</h2> -->
+                    <img src="assets/images/santa.png" alt="Santa" class=" santa-image">
                 </div>
 
                 <!-- Content Column: Contains the pages for the app -->
                 <div class="col-12 col-md-7 align-items-center min-vh-100">
-                    <div id="landing-page"
-                        class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
+                   <!-- d-flex  removed from class landing page--> 
+                    <div id="landing-page"             
+                        class="flex-column justify-content-center align-items-center vertical-center-container">
                         <h1><i class="fas fa-gift"></i></h1>
                         <h1>Be a SANTA</h1>
                         <h5>Want to Gift Your Loved Ones ?</h5>
-                        <button class="button-21" role="button">Gift</button>
+                        <button class="button-21" id="gift-button" role="button">Gift</button>
                     </div>
 
-
+                <!-- d-flex removed from page1 class and same for other pages -->
                     <!-- Page 1 -->
-                    <div id="page1"
-                        class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
+                    <div id="page1" 
+                        class="  flex-column justify-content-center align-items-center vertical-center-container">
                         <h2>Select the monetary value of your gift</h2>
                         <div class="row justify-content-center">
                             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
@@ -76,7 +76,7 @@
 
                     <!-- Page 2 -->
                     <div id="page2"
-                        class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
+                        class=" flex-column justify-content-center align-items-center vertical-center-container">
                         <h2>Which Continent would you like to exchange gifts with?</h2>
                         <div class="row justify-content-center">
                             <!-- North America -->
@@ -136,13 +136,11 @@
                             </div>
                         </div>
                     </div>
-
                   
               
-
                     <!-- Page 3 -->
                     <div id="page3"
-                        class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
+                        class=" flex-column justify-content-center align-items-center vertical-center-container">
                         <h2>Thank you for sending us your wonderful gift. Here is what we would like to give you in
                             return!
                         </h2>
@@ -167,7 +165,7 @@
         </div>
 
         <!-- placeholder html to test javascript working -->
-        <div id="container">
+        <!-- <div id="container">
             <div id="landing">
                 <button id="start-button">Start</button>
             </div>
@@ -180,12 +178,11 @@
             <div id="row3-id">
                 <button id="page-three-back-button">Button 3</button>
             </div>
-        </div>
+        </div> -->
 
     </main>
     <!-- Footer Section -->
     <footer>
-        Footer Section
         <p>&copy; 2023 Hackathon - Gift Exchange. All rights reserved. Developed by Team6.</p>
     </footer>
 
@@ -195,6 +192,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/script.js"></script>
+   
 </body>
 
 
