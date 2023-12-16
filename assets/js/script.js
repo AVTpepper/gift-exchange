@@ -1,10 +1,7 @@
 $(document).ready(function () {
-    // const CHEAP = $('#cheap-button').attr('value');
-    // const MID = $('#page1').attr('value');
-    // const EXPENSIVE = $('#page1').attr('value');
-    // const CONTINENTTEST = $('#page2').attr('value');
     let giftGrade = '';
     let continent = '';
+    let calculatedGift = '';
 
     lottie.loadAnimation({
         container: document.getElementById("lottie-container"),
@@ -105,8 +102,253 @@ $(document).ready(function () {
         // get the "value" attribute off the clicked continent buttons
         continent = $(this).attr('data-value');
         console.log("continent selected: " + continent);
+        calculateGift();
         loadPageThree();
     };
+
+
+    function calculateGift() {
+        let calculation = Math.round((Math.floor(Math.random() * 11)) / 100 * 20) + 1;
+        if (continent == "North America") {
+            if (giftGrade == "affordable") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702746501/gift-images/gift-cheap-na1_gam5s9.png');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702746502/gift-images/gift-cheap-na2_titthk.png');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702746503/gift-images/gift-cheap-na3_eos2u8.png');
+                }
+            } else if (giftGrade == "moderate") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "expensive") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == '') {
+                console.log("no gift grade selected!");
+            } else {
+                console.log("Error! value of giftGrade is:" + giftGrade);
+            };
+        } else if (continent == "Europe") {
+            if (giftGrade == "affordable") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "moderate") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "expensive") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == '') {
+                console.log("no gift grade selected!");
+            } else {
+                console.log("Error! value of giftGrade is:" + giftGrade);
+            };
+        } else if (continent == "Asia") {
+            if (giftGrade == "affordable") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "moderate") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "expensive") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == '') {
+                console.log("no gift grade selected!");
+            } else {
+                console.log("Error! value of giftGrade is:" + giftGrade);
+            };
+        } else if (continent == "South America") {
+            if (giftGrade == "affordable") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "moderate") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "expensive") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == '') {
+                console.log("no gift grade selected!");
+            } else {
+                console.log("Error! value of giftGrade is:" + giftGrade);
+            };
+        } else if (continent == "Africa") {
+            if (giftGrade == "affordable") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "moderate") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "expensive") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == '') {
+                console.log("no gift grade selected!");
+            } else {
+                console.log("Error! value of giftGrade is:" + giftGrade);
+            };
+        } else if (continent == "Oceania") {
+            if (giftGrade == "affordable") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "moderate") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == "expensive") {
+                if (calculation == 1) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 2) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                } else if (calculation == 3) {
+                    calculatedGift = '';
+                    $('#giftReceivedImage').prop('src', '');
+                }
+            } else if (giftGrade == '') {
+                console.log("no gift grade selected!");
+            } else {
+                console.log("Error! value of giftGrade is:" + giftGrade);
+            };
+        } else if (continent == '') {
+            console.log("Error, no country picked!");
+        } else {
+            console.log("Error! value of continent is:" + continent);
+        };
+    }
 
       // go back to "Home" button
     $('#return-home').on('click', function() {
