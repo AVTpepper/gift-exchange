@@ -59,7 +59,8 @@ p {
 
 #page1,
 #page2,
-#page3 {
+#page3,
+#page4 {
     border: 2px solid rgb(155, 16, 16);
     margin-top: 4rem;
     padding: 2rem;
@@ -290,7 +291,7 @@ footer {
         width: 100%;
     }
 
-    #page1, #page2, #page3, #landing-page {
+    #page1, #page2, #page3, #page4, #landing-page {
         margin: 2rem 1rem;
         width: auto;
         height: auto;
