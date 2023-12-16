@@ -46,7 +46,7 @@ h1 {
 }
 
 p {
-    color: #ff8800;
+    color: rgb(255, 136, 0);
 }
 
 /* js controlled styles */
@@ -165,6 +165,12 @@ p {
 .continent-image {
     max-width: 160px;
     height: auto;
+}
+
+/* Hover effect on continents (lets find a better color for this maybe) */
+img.continent-image:hover {
+    background-color: rgba(255, 136, 0, 0.5);
+    border-radius: 35px;
 }
 
 .continent-label {
