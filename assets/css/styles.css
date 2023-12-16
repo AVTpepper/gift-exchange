@@ -32,15 +32,20 @@ main {
     text-align: center;
 }
 
-/* Footer Section */
-footer {
-    bottom: 0;
+.main-container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     width: 100%;
-    text-align: center;
-    padding: .5rem;
-    word-wrap: break-word;
-    white-space: normal;
-    color:#ffffff
+}
+h1{
+    font-family: 'Chewy', arial, sans-serif;
+}
+
+p {
+    color:#ff8800;
 }
 
 /* js controlled styles */
@@ -73,7 +78,17 @@ footer {
     color: #ffffff;
     font-size: 24px;
     margin-bottom: 1rem;
+    padding: 0.5rem;
 }
+
+#page3 h5 {
+    padding: 1rem;
+}
+
+#page2 h2 {
+    padding-top: 2rem;
+}
+
 
 .img-option {
     border: 3px solid rgb(215, 107, 7);
@@ -125,30 +140,6 @@ footer {
     margin-top: 0.5rem; 
 }
 
-
-/* Page 2 */
-
-.form-control{
-    min-width:400px;
-}
-
-/* new */
-
-.main-container {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-}
-h1{
-    font-family: 'Chewy', arial, sans-serif;
-}
-
-p {
-    color:#ff8800;
-}
 
 /* landing page */
 .santa-image{
@@ -244,6 +235,56 @@ p {
     color:#fff;
   }
   
+
+/* contact form */
+
+#contact-form {
+    padding: 1.5rem;
+}
+
+.form-control{
+    min-width:400px;
+}
+
+/* Footer Section */
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    word-wrap: break-word;
+    white-space: normal;
+    color:#ffffff
+}
+
+
+
+
+/* responsivness */
+@media screen and (max-width: 768px) {
+    .santa-image {
+        height: auto;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .be-a-santa-image {
+        width: 100%;
+    }
+
+    .form-control {
+        min-width: auto;
+        width: 100%;
+    }
+
+    #page1, #page2, #page3, #landing-page {
+        margin: 2rem 1rem;
+        width: auto;
+        height: auto;
+    }
+}
+
+
   /* customizable snowflake styling */
   .snowflake {
     color: #fff;
@@ -261,3 +302,4 @@ p {
     @keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
   
     
+
