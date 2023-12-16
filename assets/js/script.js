@@ -85,4 +85,26 @@ $(document).ready(function () {
     $('#page-two-back-button').on('click', loadPageOne);
     $('#page-three-back-button').on('click', loadPageTwo);
 
+
+    // EmailJS script:
+    (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('eE_kGwavkK_CYEjee');
+    })();
+
+    window.onload = function () {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            this.send_gift.value = giftGrade
+            // this.received_gift.value = 
+            this.continent.value = continent
+            // these IDs from the previous steps
+            emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
+                .then(function () {
+                    console.log('SUCCESS!');
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
 });

@@ -44,9 +44,9 @@ footer {
 }
 
 /* js controlled styles */
-/* .display-none {
+.display-none {
     display: none;
-} */
+}
 
 .red {
     background-color: red;
@@ -67,20 +67,12 @@ footer {
     height:85%
 }
 
-#page1,
-#page2,
-#page3 {
-
-    display: none; 
-}
-
 #page1 h2,
 #page2 h2,
 #page3 h2 {
     color: #ffffff;
     font-size: 24px;
     margin-bottom: 1rem;
-    
 }
 
 .img-option {
@@ -144,9 +136,9 @@ footer {
 
 .main-container {
     color: #fff;
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     height: 100vh;
     width: 100%;
 }
@@ -159,10 +151,6 @@ p {
 }
 
 /* landing page */
-#landing-page{
-    margin-top: 15rem;
-}
-
 .santa-image{
     padding-left: 50px;
     height: 610px;
@@ -200,7 +188,7 @@ p {
     box-sizing: border-box;
     color: #ffffff;
     cursor: pointer;
-    /* display: inline-flex; */
+    display: inline-flex;
     font-family: CircularStd, sans-serif;
     font-size: 1rem;
     height: auto;
