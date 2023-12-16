@@ -13,11 +13,13 @@ $(document).ready(function () {
         $('#page1').addClass('display-none');
         $('#page2').addClass('display-none');
         $('#page3').addClass('display-none');
+        $('#page4').addClass('display-none');
 
         $('#landing-page').addClass('d-flex');
         $('#page1').removeClass('d-flex');
         $('#page2').removeClass('d-flex');
         $('#page3').removeClass('d-flex');
+        $('#page4').removeClass('d-flex');
     }
     loadLandingPage();
 
@@ -96,7 +98,7 @@ $(document).ready(function () {
         }
     }
 
-    $('#start-gifting-button').on('click', function() {
+    $('#start-gifting-button').on('click', function () {
         loadPageOne();
         santaImageVisibility();
     });
