@@ -232,13 +232,14 @@
                             <!-- Elf Image -->
                             <div class="col-md-6 col-sm-12 text-center">
                                 <div class="selection-option" data-value="elf">
-                                    <img src="assets/images/elf.png" alt="Elf" class="img-fluid">
+                                    <img src="assets/images/elf.png" alt="Elf" class="img-fluid" id="elfImage">
                                 </div>
                             </div>
                             <!-- Gift Image -->
                             <div class="col-md-6 col-sm-12 text-center">
                                 <div class="selection-option" data-value="gift">
-                                    <img src="assets/images/gift.png" alt="Gift" class="img-fluid">
+                                    <img src="assets/images/gift.png" alt="Gift" class="img-fluid" id="giftImage">
+                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="Gift received" class="img-fluid gift-received-img" style="display: none;" id="giftReceivedImage">
                                 </div>
                             </div>
                         </div>
@@ -296,6 +297,20 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.9/lottie.min.js"></script>
     <script src="assets/js/script.js"></script>
+   
+    <!-- Animation Gift -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elfImage = document.getElementById('elfImage');
+            var giftImage = document.getElementById('giftImage');
+            var giftReceivedImage = document.getElementById('giftReceivedImage');
+    
+            elfImage.addEventListener('click', function() {
+                giftImage.style.display = 'none'; // Hide the original gift image
+                giftReceivedImage.style.display = 'block'; 
+            });
+        });
+    </script>
     
 </body>
 
