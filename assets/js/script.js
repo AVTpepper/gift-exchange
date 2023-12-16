@@ -157,10 +157,11 @@ $(document).ready(function () {
             // these IDs from the previous steps
             emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
                 .then(function () {
-                    console.log('SUCCESS!');
-                    loadPageFour(); 
+                    loadPageFour();
+                    document.getElementById('contact-form').reset();
                 }, function (error) {
                     console.log('FAILED...', error);
+                    document.getElementById('contact-form').reset();
                 });
         });
     // }
