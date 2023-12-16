@@ -74,6 +74,15 @@ p {
     height:85%
 }
 
+#page2 {
+    padding: 0;
+}
+
+#page3 {
+    height: auto;
+    padding: 0;
+}
+
 #landing-page {
     border: 2px solid rgb(155, 16, 16);
     margin: 4rem;
