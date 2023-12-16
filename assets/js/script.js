@@ -86,6 +86,26 @@ $(document).ready(function () {
     $('#page-three-back-button').on('click', loadPageTwo);
 
 
+
+    //change the Santa image based on screen width
+    function santaImageVisibility() {
+        if ($(window).width() <= 768) {
+            $('.santa-image').hide();
+        } else {
+            $('.santa-image').show();
+        }
+    }
+
+    $('#start-gifting-button').on('click', function() {
+        loadPageOne();
+        santaImageVisibility();
+    });
+
+    // resize to adjust the Santa image visibility
+    $(window).resize(santaImageVisibility);
+
+
+
     // EmailJS script:
     (function () {
         // https://dashboard.emailjs.com/admin/account
