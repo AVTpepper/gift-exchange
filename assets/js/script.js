@@ -124,24 +124,24 @@ $(document).ready(function () {
             } else if (giftGrade == "moderate") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747490/gift-images/Cropped%20images/gift-mod-na1_boecqh_a7alip.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747496/gift-images/Cropped%20images/gift-mod-na2_mail4b_uc2vaj.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746527/gift-images/gift-mod-na3_nqa0ru.png');
                 }
             } else if (giftGrade == "expensive") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747491/gift-images/Cropped%20images/gift-exp-na1_tz1zcu_aozd4l.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747483/gift-images/Cropped%20images/gift-exp-na2_pl7dtm_kuredt.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747479/gift-images/Cropped%20images/gift-exp-na3_pgepoo_expx1c.png');
                 }
             } else if (giftGrade == '') {
                 console.log("no gift grade selected!");
@@ -152,35 +152,35 @@ $(document).ready(function () {
             if (giftGrade == "affordable") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747488/gift-images/Cropped%20images/gift-cheap-eu1_ziqdgv_xkg07h.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747479/gift-images/Cropped%20images/gift-cheap-eu2_eup1ib_qaqyll.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747481/gift-images/Cropped%20images/gift-cheap-eu3_qpjkve_ggpn22.png');
                 }
             } else if (giftGrade == "moderate") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747485/gift-images/Cropped%20images/gift-mod-eu1_ktgjtd_i4zgfw.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747495/gift-images/Cropped%20images/gift-mod-eu2_vmasnv_tlttla.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747486/gift-images/Cropped%20images/gift-mod-eu3_gfhxvw_i17mnq.png');
                 }
             } else if (giftGrade == "expensive") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747486/gift-images/Cropped%20images/gift-exp-eu1_zdesvb_w8ebul.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747487/gift-images/Cropped%20images/gift-exp-eu2_gwagcq_fkw06r.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747490/gift-images/Cropped%20images/gift-exp-eu3_owmzqp_skjc9q.png');
                 }
             } else if (giftGrade == '') {
                 console.log("no gift grade selected!");
@@ -191,35 +191,35 @@ $(document).ready(function () {
             if (giftGrade == "affordable") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747478/gift-images/Cropped%20images/gift-cheap-asia1_gprn6k_hufpzc.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747477/gift-images/Cropped%20images/gift-cheap-asia2_lzqv6h_ijpejt.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746500/gift-images/gift-cheap-asia3_gbrt7g.png');
                 }
             } else if (giftGrade == "moderate") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746520/gift-images/gift-mod-asia1_yhcufv.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746522/gift-images/gift-mod-asia2_zohysw.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747485/gift-images/Cropped%20images/gift-mod-asia3_sexxwt_ccv7hu.png');
                 }
             } else if (giftGrade == "expensive") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747486/gift-images/Cropped%20images/gift-exp-asia1_uwwsme_nzj71c.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747483/gift-images/Cropped%20images/gift-exp-asia2_bv8teo_yccor2.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746515/gift-images/gift-exp-asia3_nlqvpa.png');
                 }
             } else if (giftGrade == '') {
                 console.log("no gift grade selected!");
@@ -230,35 +230,35 @@ $(document).ready(function () {
             if (giftGrade == "affordable") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747481/gift-images/Cropped%20images/gift-cheap-sa1_grgckr_lzshj6.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747482/gift-images/Cropped%20images/gift-cheap-sa2_rf2j7p_syihr1.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747492/gift-images/Cropped%20images/gift-cheap-sa3_hmpm1g_s0fn4j.png');
                 }
             } else if (giftGrade == "moderate") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747481/gift-images/Cropped%20images/gift-mod-sa1_exqeux_wre75k.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746528/gift-images/gift-mod-sa2_q4diqs.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747491/gift-images/Cropped%20images/gift-mod-sa3_zpxjyr_rugccl.png');
                 }
             } else if (giftGrade == "expensive") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747492/gift-images/Cropped%20images/gift-exp-sa1_ox9q5f_ranvjb.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747493/gift-images/Cropped%20images/gift-exp-sa2_g6au09_f1631v.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746515/gift-images/gift-exp-sa3_b7gew8.png');
                 }
             } else if (giftGrade == '') {
                 console.log("no gift grade selected!");
@@ -269,35 +269,35 @@ $(document).ready(function () {
             if (giftGrade == "affordable") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702749236/gift-images/gift-cheap-africa_uh7vsg.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702749154/gift-images/gift-cheap-africa2_y0aqex.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702749112/gift-images/gift-cheap-africa3_mnjwaz.png');
                 }
             } else if (giftGrade == "moderate") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747484/gift-images/Cropped%20images/gift-mod-africa1_vtcgsr_vksni0.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747479/gift-images/Cropped%20images/gift-mod-africa2_aephp4_aienrf.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702748893/gift-images/gift-mod-africa3_eaupkk.png');
                 }
             } else if (giftGrade == "expensive") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702749061/gift-images/gift-exp-africa1_qoqlsl.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702749024/gift-images/gift-exp-africa2_hvzltt.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702748966/gift-images/gift-exp-africa3_fifuhc.png');
                 }
             } else if (giftGrade == '') {
                 console.log("no gift grade selected!");
@@ -308,35 +308,35 @@ $(document).ready(function () {
             if (giftGrade == "affordable") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747477/gift-images/Cropped%20images/gift-cheap-aus1_ndpsvq_rdp12e.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747478/gift-images/Cropped%20images/gift-cheap-aus2_anwick_z3z5pp.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747494/gift-images/Cropped%20images/gift-cheap-aus3_sorbij_v63fue.png');
                 }
             } else if (giftGrade == "moderate") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747489/gift-images/Cropped%20images/gift-mod-aus1_pqxxuo_hpadus.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747493/gift-images/Cropped%20images/gift-mod-aus2_va8jyc_xatpla.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747487/gift-images/Cropped%20images/gift-mod-aus3_dwrzjn_arv6wk.png');
                 }
             } else if (giftGrade == "expensive") {
                 if (calculation == 1) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747485/gift-images/Cropped%20images/gift-exp-aus1_vtwtua_jusfuh.png');
                 } else if (calculation == 2) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747490/gift-images/Cropped%20images/gift-exp-aus2_wpewco_qu9xya.png');
                 } else if (calculation == 3) {
                     calculatedGift = '';
-                    $('#giftReceivedImage').prop('src', '');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747491/gift-images/Cropped%20images/gift-exp-aus3_jihoxl_vnyuip.png');
                 }
             } else if (giftGrade == '') {
                 console.log("no gift grade selected!");
