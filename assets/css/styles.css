@@ -40,12 +40,13 @@ main {
     height: 100vh;
     width: 100%;
 }
-h1{
+
+h1 {
     font-family: 'Chewy', arial, sans-serif;
 }
 
 p {
-    color:#ff8800;
+    color: #ff8800;
 }
 
 /* js controlled styles */
@@ -69,9 +70,9 @@ p {
     border-radius: 35px;
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.324);
     background-color: rgba(14, 2, 2, 0.3);
-    color:aliceblue;
-    width:90%;
-    height:auto;
+    color: aliceblue;
+    width: 90%;
+    min-height: 85%;
 }
 
 #landing-page {
@@ -82,9 +83,9 @@ p {
     border-radius: 35px;
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.324);
     background-color: rgba(14, 2, 2, 0.3);
-    color:aliceblue;
-    width:80%;
-    height: 75%
+    color: aliceblue;
+    width: 80%;
+    max-height: 85%
 }
 
 #page1 h2,
@@ -109,10 +110,10 @@ p {
     border: 3px solid rgb(215, 107, 7);
     padding: 10px;
     border-radius: 10px;
-    max-width: 250px; 
-    width: 100%; 
-    height: auto; 
-    margin-bottom: 0.5rem; 
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
 }
 
 #page1 h3 {
@@ -128,7 +129,7 @@ p {
 .selection-option {
     cursor: pointer;
     transition: transform 0.3s ease;
-    padding-bottom: 1rem; 
+    padding-bottom: 1rem;
 }
 
 .selection-option:hover {
@@ -138,7 +139,7 @@ p {
 
 .selection-option.selected {
     border: 3px solid #4CAF50;
-    
+
     border-radius: 10px;
 }
 
@@ -151,7 +152,7 @@ p {
     padding: 0 0.25rem;
     border-radius: 1rem;
     background-color: #00000070;
-    color:#ffffff70;
+    color: #ffffff70;
     cursor: pointer;
 }
 
@@ -163,23 +164,23 @@ p {
 
 .continent-image {
     max-width: 160px;
-    height: auto; 
+    height: auto;
 }
 
 .continent-label {
-    font-size: 1rem; 
-    color: rgb(255, 255, 255)fff; 
-    margin-top: 0.5rem; 
+    font-size: 1rem;
+    color: rgb(255, 255, 255)fff;
+    margin-top: 0.5rem;
 }
 
 
 /* landing page */
-.santa-image{
+.santa-image {
     padding-left: 50px;
     /* height: 680px ; */
 }
 
-.be-a-santa-image{
+.be-a-santa-image {
     width: 600px;
 }
 
@@ -229,12 +230,12 @@ p {
     white-space: nowrap;
 }
 
-.margin-15{
-    margin-top:15px;
+.margin-15 {
+    margin-top: 15px;
 }
 
-.white{
-    color:#dedede;
+.white {
+    color: #dedede;
 }
 
 .button-21:active,
@@ -255,18 +256,19 @@ p {
 }
 
 .square {
-    border-radius: 0; /* Removes the rounded corners */
+    border-radius: 0;
+    /* Removes the rounded corners */
 }
 
 .button-21:focus:not(:active) {
     box-shadow: rgba(4, 8, 7, 0.25) 0 0 0 .125em;
 }
 
-  .intro,
-  .intro ab{
-    color:#fff;
-  }
-  
+.intro,
+.intro ab {
+    color: #fff;
+}
+
 
 /* contact form */
 
@@ -274,8 +276,8 @@ p {
     padding: 1.5rem;
 }
 
-.form-control{
-    min-width:400px;
+.form-control {
+    min-width: 400px;
 }
 
 /* Footer Section */
@@ -286,7 +288,7 @@ footer {
     padding: .5rem;
     word-wrap: break-word;
     white-space: normal;
-    color:#ffffff
+    color: #ffffff
 }
 
 
@@ -310,7 +312,11 @@ footer {
         width: 100%;
     }
 
-    #page1, #page2, #page3, #page4, #landing-page {
+    #page1,
+    #page2,
+    #page3,
+    #page4,
+    #landing-page {
         margin: 2rem 1rem;
         width: auto;
         height: auto;
@@ -319,37 +325,158 @@ footer {
 
 /* For standard laptops */
 @media (min-width: 992px) {
-    .santa-image{
-        padding-left: 50px;
-        height: 680px !important;
-    }
-  }
-  
-  /* for larger devinces */
-@media (min-width: 1200px) {
-    .santa-image{
+    .santa-image {
         padding-left: 50px;
         height: 680px !important;
     }
 }
-  
+
+/* for larger devinces */
+@media (min-width: 1200px) {
+    .santa-image {
+        padding-left: 50px;
+        height: 680px !important;
+    }
+}
 
 
-  /* customizable snowflake styling */
-  .snowflake {
+
+/* customizable snowflake styling */
+.snowflake {
     color: #fff;
     font-size: 1em;
     font-family: Arial;
     text-shadow: 0 0 1px #000;
-  }
-  
-  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
-  @-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);
-    transform:translateX(0px)}50%{-webkit-transform:translateX(80px);
-        transform:translateX(80px)}100%{-webkit-transform:translateX(0px);
-            transform:translateX(0px)}}
-    @keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
-    @keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
-  
-    
+}
 
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes snowflakes-shake {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px)
+    }
+
+    50% {
+        transform: translateX(80px)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s
+}
+
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay: 6s, .5s
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s
+}
+
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s
+}
+
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s
+}
