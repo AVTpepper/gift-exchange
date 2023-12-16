@@ -59,8 +59,7 @@ p {
 
 #page1,
 #page2,
-#page3,
-#landing-page {
+#page3 {
     border: 2px solid rgb(155, 16, 16);
     margin-top: 4rem;
     padding: 2rem;
@@ -70,6 +69,19 @@ p {
     color:aliceblue;
     width:90%;
     height:85%
+}
+
+#landing-page {
+    border: 2px solid rgb(155, 16, 16);
+    margin: 4rem;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.324);
+    background-color: rgba(14, 2, 2, 0.3);
+    color:aliceblue;
+    width:80%;
+    height: 75%
 }
 
 #page1 h2,
@@ -144,7 +156,7 @@ p {
 /* landing page */
 .santa-image{
     padding-left: 50px;
-    height: 680px;
+    /* height: 680px ; */
 }
 
 .be-a-santa-image{
@@ -261,9 +273,10 @@ footer {
 
 
 /* responsivness */
+/* for small devinces */
 @media screen and (max-width: 768px) {
     .santa-image {
-        height: auto;
+        height: 400px !important;
         max-width: 100%;
         padding-left: 0;
     }
@@ -283,6 +296,23 @@ footer {
         height: auto;
     }
 }
+
+/* For standard laptops */
+@media (min-width: 992px) {
+    .santa-image{
+        padding-left: 50px;
+        height: 680px !important;
+    }
+  }
+  
+  /* for larger devinces */
+@media (min-width: 1200px) {
+    .santa-image{
+        padding-left: 50px;
+        height: 680px !important;
+    }
+}
+  
 
 
   /* customizable snowflake styling */
