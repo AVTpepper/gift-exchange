@@ -61,6 +61,8 @@ p {
 #page2,
 #page3,
 #page4 {
+    /* position needing to be clarified for back button positioning */
+    position: relative;
     border: 2px solid rgb(155, 16, 16);
     margin-top: 4rem;
     padding: 2rem;
@@ -138,6 +140,23 @@ p {
     border: 3px solid #4CAF50;
     
     border-radius: 10px;
+}
+
+.back-button {
+    position: absolute;
+    overflow: hidden;
+    bottom: 17.5px;
+    right: 17.5px;
+    font-size: 1.2rem;
+    padding: 0 0.25rem;
+    border-radius: 1rem;
+    background-color: #00000070;
+    color:#ffffff70;
+    cursor: pointer;
+}
+
+.back-button-text {
+    padding-left: 0.1rem;
 }
 
 /* Page 2 */

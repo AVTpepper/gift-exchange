@@ -117,10 +117,21 @@ $(document).ready(function () {
     $('#start-gifting-button').on('click', loadPageOne);
     $('.page-one-button').on('click', getGiftGrade);
     $('.page-two-button').on('click', getContinent);
+    
+    // back buttons and styling
+    function hoverBackButton() {
+        $(this).children('.back-button-text').removeClass('display-none');
+    }
+
+    function unHoverBackButton() {
+        $(this).children('.back-button-text').addClass('display-none');
+    }
+
     $('#page-one-back-button').on('click', loadLandingPage);
     $('#page-two-back-button').on('click', loadPageOne);
     $('#page-three-back-button').on('click', loadPageTwo);
-
+    $('.back-button').on('mouseenter', hoverBackButton);
+    $('.back-button').on('mouseleave', unHoverBackButton);
 
 
     //change the Santa image based on screen width
