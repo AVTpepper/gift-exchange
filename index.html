@@ -239,7 +239,7 @@
                             <div class="col-md-6 col-sm-12 text-center">
                                 <div class="selection-option" data-value="gift">
                                     <img src="assets/images/gift.png" alt="Gift" class="img-fluid" id="giftImage">
-                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="Gift received" class="img-fluid gift-received-img">
+                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="Gift received" class="img-fluid gift-received-img" style="display: none;" id="giftReceivedImage">
                                 </div>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                     </div>
 
                     <!-- Page 4 -->
-                    <div id="page3"
+                    <div id="page4"
                     class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
                         <h5>Thank you!. Your Email has been sent.</h5>
                         <p>please check your inbox</p>
@@ -298,9 +298,11 @@
         document.addEventListener('DOMContentLoaded', function() {
             var elfImage = document.getElementById('elfImage');
             var giftImage = document.getElementById('giftImage');
+            var giftReceivedImage = document.getElementById('giftReceivedImage');
     
             elfImage.addEventListener('click', function() {
                 giftImage.style.display = 'none'; // Hide the original gift image
+                giftReceivedImage.style.display = 'block'; 
             });
         });
     </script>
