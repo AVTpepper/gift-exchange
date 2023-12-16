@@ -81,7 +81,7 @@ p {
     background-color: rgba(14, 2, 2, 0.3);
     color:aliceblue;
     width:80%;
-    height: 75vh
+    height: 75%
 }
 
 #page1 h2,
@@ -276,7 +276,7 @@ footer {
 /* for small devinces */
 @media screen and (max-width: 768px) {
     .santa-image {
-        height: auto;
+        height: 400px !important;
         max-width: 100%;
         padding-left: 0;
     }
