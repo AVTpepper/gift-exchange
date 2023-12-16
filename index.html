@@ -14,15 +14,8 @@
 </head>
 
 <body class="d-flex flex-column vh-100">
-    <!-- Header Section -->
-    <!-- <header>
-        Header Section
-    </header> -->
-
-
     <!-- Main Section -->
     <main class="flex-grow-1 d-flex align-items-center justify-content-center">
-
         <div class=" snowflakes" aria-hidden="true">
         <div class="snowflake">
             ❅
@@ -117,51 +110,47 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-
                 <!-- Image Column: Santa and Christmas Tree -->
                 <div class="col-md-5 d-md-flex flex-column align-items-center justify-content-center">
                     <!-- <img src="assets/images/tree.png" alt="tree-image" class="img-fluid tree-image"> -->
                     <img src="assets/images/santa.png" alt="Santa" class="img-fluid santa-image">
                 </div>
-
                 <!-- Content Column: Contains the pages for the app -->
                 <div class="col-12 col-md-7 align-items-center">
                     <div id="landing-page"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
                         <img src="assets/images/be-a-santa.png" alt="Be-a-Santa" class="img-fluid be-a-santa-image">
-                        <h5>Want to Gift Someone ?</h5>
+                        <h5>This is your chance to exchange a virtual gift with someone around the world.</h5>
                         <button id="start-gifting-button" class="button-21 margin-15" role="button">Gift</button>
                     </div>
-
                     <!-- Page 1 -->
                     <div id="page1"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
-                        <h2>Select the monetary value of your gift</h2>
+                        <h2>Select the monetary value of the gift you want to send:</h2>
                         <div class="row justify-content-center">
                             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
                                 <div class="page-one-button selection-option d-flex flex-column align-items-center"
                                     data-value="affordable">
-                                    <img src="assets/images/cheap.png" alt="Coal" class="img-option">
-                                    <h3>$</h3>
+                                    <img src="assets/images/cheap.png" alt="Coins" class="img-option">
+                                    <h3>Affordable</h3>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
                                 <div class="page-one-button selection-option d-flex flex-column align-items-center"
                                     data-value="moderate">
-                                    <img src="assets/images/moderate.png" alt="Console" class="img-option">
-                                    <h3>$$</h3>
+                                    <img src="assets/images/moderate.png" alt="Cash and coins" class="img-option">
+                                    <h3>Moderate</h3>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
                                 <div class="page-one-button selection-option d-flex flex-column align-items-center"
                                     data-value="expensive">
-                                    <img src="assets/images/expensive.png" alt="Sports Car" class="img-option">
-                                    <h3>$$$</h3>
+                                    <img src="assets/images/expensive.png" alt="Cash, coins and a money bag" class="img-option">
+                                    <h3>Expensive</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <!-- Page 2 -->
                     <div id="page2"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
@@ -219,13 +208,11 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Page 3 -->
                     <div id="page3"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
-                        <h5>Thank you for sending us your wonderful gift.</h5>
-                        <h2>Here is what we would like to give you in RETURN!</h2>
-                        <p>Click the elf to unwrap your present</p>
+                        <h2>Thank you for using our virtual gift exchange.</h2>
+                        <h5>Here is what you recieved in return!</h5>
                         <div class="row justify-content-center">
                             <!-- Elf Image -->
                             <div class="col-md-6 col-sm-12 text-center">
@@ -234,17 +221,21 @@
                                 </div>
                             </div>
                             <!-- Gift Image -->
+                            <!-- We need to find a way of selecting the correct gift here plus adjust the size of the image of the recieved gift -->
+                            <!-- We might want a closed box as image, instead of an opened one. And we might want to click the gift instead of the elve but that's up to y'all -->
                             <div class="col-md-6 col-sm-12 text-center">
                                 <div class="selection-option" data-value="gift">
                                     <img src="assets/images/gift.png" alt="Gift" class="img-fluid" id="giftImage">
-                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="Gift received"
+                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="An image of the recieved gift"
                                         class="img-fluid gift-received-img" style="display: none;"
                                         id="giftReceivedImage">
                                 </div>
                             </div>
+                            <p>Click the elf to unwrap your present!</p>
                         </div>
                         <!--User Info Form-->
                         <form id="contact-form">
+                            <p>Please fill out the form below to receive a confirmation by email.</p>
                             <div class="form-group">
                                 <label for="name" class="margin-15">Name:</label>
                                 <input type="text" class="form-control margin-15" id="name" name="user_name" required>
@@ -255,18 +246,18 @@
                                     required>
                             </div>
                             <input type="hidden" name="send_gift">
+                            <!-- We need to add the received_gift to the form so we can send it per mail too. -->
                             <!-- <input type="hidden" name="received_gift"> -->
                             <input type="hidden" name="continent">
                             <!-- Submit button -->
                             <input type="submit" value="Send" class="button-21 margin-15" role="button">
                         </form>
                     </div>
-
                     <!-- Page 4 -->
                     <div id="page4"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
-                        <h5>Thank you!. Your Email has been sent.</h5>
-                        <p>please check your inbox</p>
+                        <h5>Thank you! A confirmation email has been sent.</h5>
+                        <p>Please check your inbox.</p>
                         <div class="row justify-content-center">
                             <!-- Green check Image -->
                             <div class="col-md-6 col-sm-12 text-center">
@@ -283,14 +274,11 @@
                 </div>
             </div>
         </div>
-
     </main>
     <!-- Footer Section -->
     <footer>
-        <p class="margin-15 white">&copy; 2023 Hackathon - Gift Exchange. All rights reserved. Developed by Team6.</p>
+        <p class="margin-15 white">&copy; 2023 Hackathon - Gift Exchange. All rights reserved. Developed by gift pull origin main.</p>
     </footer>
-
-
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -299,7 +287,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.9/lottie.min.js"></script>
     <script src="assets/js/script.js"></script>
-
     <!-- Animation Gift -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -313,8 +300,5 @@
             });
         });
     </script>
-
 </body>
-
-
 </html>
