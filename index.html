@@ -13,17 +13,10 @@
     <link rel="icon" href="assets/images/gift_box.png" type="image/x-icon">
 </head>
 
-<body>
-    <!-- Header Section -->
-    <!-- <header>
-        Header Section
-    </header> -->
-
-
+<body class="d-flex flex-column vh-100 w-100">
     <!-- Main Section -->
-    <main>
-
-        <div class="snowflakes" aria-hidden="true">
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class=" snowflakes" aria-hidden="true">
             <div class="snowflake">
                 ❅
             </div>
@@ -117,48 +110,57 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-
                 <!-- Image Column: Santa and Christmas Tree -->
                 <div class="col-md-5 d-md-flex flex-column align-items-center justify-content-center">
                     <!-- <img src="assets/images/tree.png" alt="tree-image" class="img-fluid tree-image"> -->
                     <img src="assets/images/santa.png" alt="Santa" class="img-fluid santa-image">
                 </div>
-
                 <!-- Content Column: Contains the pages for the app -->
                 <div class="col-12 col-md-7 align-items-center">
                     <div id="landing-page"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
                         <img src="assets/images/be-a-santa.png" alt="Be-a-Santa" class="img-fluid be-a-santa-image">
-                        <h5>Want to Gift Someone ?</h5>
+                        <h5>This is your chance to exchange a virtual gift with someone around the world.</h5>
                         <button id="start-gifting-button" class="button-21 margin-15" role="button">Gift</button>
                     </div>
-
                     <!-- Page 1 -->
                     <div id="page1"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
-                        <h2>Select the monetary value of your gift</h2>
+                        <h2>Select the monetary value of the gift you want to send:</h2>
                         <div class="row justify-content-center">
                             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                                <div class="page-one-button selection-option d-flex flex-column align-items-center" data-value="affordable">
-                                    <img src="assets/images/cheap.png" alt="Coal" class="img-option">
-                                    <h3>$</h3>
+                                <div class="page-one-button selection-option d-flex flex-column align-items-center"
+                                    data-value="affordable">
+                                    <img src="assets/images/cheap.png" alt="Coins" class="img-option">
+                                    <h3>Affordable</h3>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                                <div class="page-one-button selection-option d-flex flex-column align-items-center" data-value="moderate">
-                                    <img src="assets/images/moderate.png" alt="Console" class="img-option">
-                                    <h3>$$</h3>
+                                <div class="page-one-button selection-option d-flex flex-column align-items-center"
+                                    data-value="moderate">
+                                    <img src="assets/images/moderate.png" alt="Cash and coins" class="img-option">
+                                    <h3>Moderate</h3>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                                <div class="page-one-button selection-option d-flex flex-column align-items-center" data-value="expensive">
-                                    <img src="assets/images/expensive.png" alt="Sports Car" class="img-option">
-                                    <h3>$$$</h3>
+                                <div class="page-one-button selection-option d-flex flex-column align-items-center"
+                                    data-value="expensive">
+                                    <img src="assets/images/expensive.png" alt="Cash, coins and a money bag"
+                                        class="img-option">
+                                    <h3>Expensive</h3>
                                 </div>
                             </div>
                         </div>
+                        <!-- back button -->
+                        <div id="page-one-back-button" class="back-button">
+                            <span class="display-none back-button-text">
+                                Go back
+                            </span>
+                            <span class="button-arrow">
+                                <i class="button-arrow fa-solid fa-rotate-left"></i>
+                            </span>
+                        </div>
                     </div>
-
                     <!-- Page 2 -->
                     <div id="page2"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
@@ -167,16 +169,14 @@
                             <!-- North America -->
                             <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-1 order-md-6 order-6">
                                 <div class="page-two-button selection-option" data-value="North America">
-                                    <img src="assets/images/map-na.png" alt="North America"
-                                        class="continent-image">
+                                    <img src="assets/images/map-na.png" alt="North America" class="continent-image">
                                     <p class="continent-label">North America</p>
                                 </div>
                             </div>
                             <!-- Europe -->
                             <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-2 order-md-1 order-1">
                                 <div class="page-two-button selection-option" data-value="Europe">
-                                    <img src="assets/images/map-europe.png" alt="Europe"
-                                        class="continent-image">
+                                    <img src="assets/images/map-europe.png" alt="Europe" class="continent-image">
                                     <p class="continent-label">Europe</p>
                                 </div>
                             </div>
@@ -190,24 +190,21 @@
                             <!-- South America -->
                             <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-4 order-md-2 order-7">
                                 <div class="page-two-button selection-option" data-value="South America">
-                                    <img src="assets/images/map-sa.png" alt="South America"
-                                        class="continent-image">
+                                    <img src="assets/images/map-sa.png" alt="South America" class="continent-image">
                                     <p class="continent-label">South America</p>
                                 </div>
                             </div>
                             <!-- Africa -->
                             <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-5 order-md-3 order-2">
                                 <div class="page-two-button selection-option" data-value="Africa">
-                                    <img src="assets/images/map-africa.png" alt="Africa"
-                                        class="continent-image">
+                                    <img src="assets/images/map-africa.png" alt="Africa" class="continent-image">
                                     <p class="continent-label">Africa</p>
                                 </div>
                             </div>
                             <!-- Oceania -->
                             <div class="col-lg-4 col-md-6 col-sm-12 text-center order-lg-6 order-md-5 order-4">
-                                <div class="page-two-button selection-option" data-value="oceania">
-                                    <img src="assets/images/map-oceania.png" alt="Oceania"
-                                        class="continent-image">
+                                <div class="page-two-button selection-option" data-value="Oceania">
+                                    <img src="assets/images/map-oceania.png" alt="Oceania" class="continent-image">
                                     <p class="continent-label">Oceania</p>
                                 </div>
                             </div>
@@ -220,14 +217,21 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- back button -->
+                        <div id="page-two-back-button" class="back-button">
+                            <span class="display-none back-button-text">
+                                Go back
+                            </span>
+                            <span class="button-arrow">
+                                <i class="button-arrow fa-solid fa-rotate-left"></i>
+                            </span>
+                        </div>
                     </div>
-
                     <!-- Page 3 -->
                     <div id="page3"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
-                        <h5>Thank you for sending us your wonderful gift.</h5>
-                        <h2>Here is what we would like to give you in RETURN!</h2>
-                        <p>Click the elf to unwrap your present</p>
+                        <h2>Thank you for using our virtual gift exchange.</h2>
+                        <h5>Here is what you recieved in return!</h5>
                         <div class="row justify-content-center">
                             <!-- Elf Image -->
                             <div class="col-md-6 col-sm-12 text-center">
@@ -236,36 +240,53 @@
                                 </div>
                             </div>
                             <!-- Gift Image -->
+                            <!-- We need to find a way of selecting the correct gift here plus adjust the size of the image of the recieved gift -->
+                            <!-- We might want a closed box as image, instead of an opened one. And we might want to click the gift instead of the elve but that's up to y'all -->
                             <div class="col-md-6 col-sm-12 text-center">
                                 <div class="selection-option" data-value="gift">
                                     <img src="assets/images/gift.png" alt="Gift" class="img-fluid" id="giftImage">
-                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="Gift received" class="img-fluid gift-received-img" style="display: none;" id="giftReceivedImage">
+                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="An image of the recieved gift"
+                                        class="img-fluid gift-received-img" style="display: none;"
+                                        id="giftReceivedImage">
                                 </div>
                             </div>
+                            <p>Click the elf to unwrap your present!</p>
                         </div>
                         <!--User Info Form-->
                         <form id="contact-form">
+                            <p>Please fill out the form below to receive a confirmation by email.</p>
                             <div class="form-group">
                                 <label for="name" class="margin-15">Name:</label>
                                 <input type="text" class="form-control margin-15" id="name" name="user_name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="margin-15">Email:</label>
-                                <input type="email" class="form-control margin-15" id="email" name="user_email" required>
+                                <input type="email" class="form-control margin-15" id="email" name="user_email"
+                                    required>
                             </div>
                             <input type="hidden" name="send_gift">
-                            <!-- <input type="hidden" name="received_gift"> -->
+                            <!-- We need to add the received_gift to the form so we can send it per mail too. -->
+                            <input type="hidden" name="received_gift">
                             <input type="hidden" name="continent">
+                            
                             <!-- Submit button -->
                             <input type="submit" value="Send" class="button-21 margin-15" role="button">
                         </form>
+                        <!-- back button -->
+                        <div id="page-three-back-button" class="back-button">
+                            <span class="display-none back-button-text">
+                                Go back
+                            </span>
+                            <span class="button-arrow">
+                                <i class="button-arrow fa-solid fa-rotate-left"></i>
+                            </span>
+                        </div>
                     </div>
-
                     <!-- Page 4 -->
                     <div id="page4"
-                    class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
-                        <h5>Thank you!. Your Email has been sent.</h5>
-                        <p>please check your inbox</p>               
+                        class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
+                        <h5>Thank you! A confirmation email has been sent.</h5>
+                        <p>Please check your inbox.</p>
                         <div class="row justify-content-center">
                             <!-- Green check Image -->
                             <div class="col-md-6 col-sm-12 text-center">
@@ -273,46 +294,43 @@
                                     <!-- <img src="assets/images/green-mark.png" alt="Elf" class="img-fluid"> -->
                                     <div id="lottie-box" class="col-md-12">
                                         <div id="lottie-container"></div>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
                         <button id="return-home" class="button-21">Return Home</button>
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <p class="margin-15 white">&copy; 2023 Hackathon - Gift Exchange. All rights reserved. Developed by Team6.</p>
-        </footer>
     </main>
     <!-- Footer Section -->
-  
-
+    <footer>
+        <p class="margin-15 white">&copy; 2023 Hackathon - Gift Exchange. All rights reserved. Developed by gift pull
+            origin main.</p>
+    </footer>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://kit.fontawesome.com/85f184e105.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.9/lottie.min.js"></script>
     <script src="assets/js/script.js"></script>
-   
     <!-- Animation Gift -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var elfImage = document.getElementById('elfImage');
             var giftImage = document.getElementById('giftImage');
             var giftReceivedImage = document.getElementById('giftReceivedImage');
-    
-            elfImage.addEventListener('click', function() {
+
+            elfImage.addEventListener('click', function () {
                 giftImage.style.display = 'none'; // Hide the original gift image
-                giftReceivedImage.style.display = 'block'; 
+                giftReceivedImage.style.display = 'block';
             });
         });
     </script>
-    
 </body>
-
 
 </html>
