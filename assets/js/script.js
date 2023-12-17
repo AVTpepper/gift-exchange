@@ -3,6 +3,12 @@ $(document).ready(function () {
     let continent = '';
     let calculatedGift = '';
 
+    var giftImage = document.getElementById('giftImage');
+    var giftReceivedImage = document.getElementById('giftReceivedImage');
+    var giftDescription = document.getElementById('gift-description');
+    var thanks = document.getElementById('thanks');
+    var unbox = document.getElementById('unbox');
+
     lottie.loadAnimation({
         container: document.getElementById("lottie-container"),
         renderer: "svg",
@@ -20,14 +26,6 @@ $(document).ready(function () {
     });
 
     lottie.loadAnimation({
-        container: document.getElementsByClassName("gift-container")[0],
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "assets/images/json/giftImage.json",
-    });
-
-    lottie.loadAnimation({
         container: document.getElementById("elves-box"),
         renderer: "svg",
         loop: true,
@@ -36,8 +34,8 @@ $(document).ready(function () {
     });
 
     function loadLandingPage() {
-        // makes sure landing page displays if page reloaded
-        // or back button pressed
+        // Displays landing page and hides all
+        // other "pages"
         $('#landing-page').removeClass('display-none');
         $('#page1').addClass('display-none');
         $('#page2').addClass('display-none');
@@ -52,11 +50,9 @@ $(document).ready(function () {
         $('#page4').removeClass('d-flex');
         $('#page5').removeClass('d-flex');
     }
-    loadLandingPage();
 
     function loadPageOne() {
-        // makes sure page one loads on start button click
-        // or back button pressed
+        // Display page one
         $('#landing-page').addClass('display-none');
         $('#page1').addClass('page-transition');
         $('#page1').removeClass('display-none');
@@ -74,8 +70,7 @@ $(document).ready(function () {
     }
 
     function loadPageTwo() {
-        // makes sure page two loads on start button click
-        // or back button pressed
+        // Display page two
         $('#landing-page').addClass('display-none');
         $('#page1').addClass('display-none');
         $('#page2').addClass('page-transition');
@@ -91,8 +86,7 @@ $(document).ready(function () {
     }
 
     function loadPageThree() {
-        // makes sure page three loads on start button click
-        // or back button pressed
+        // Display page three
         $('#landing-page').addClass('display-none');
         $('#page1').addClass('display-none');
         $('#page2').addClass('display-none');
@@ -109,9 +103,8 @@ $(document).ready(function () {
         $('#page5').removeClass('d-flex');
     }
 
-    // Add a new function for loading page 4
     function loadPageFour() {
-        console.log('inside page 4')
+        // Display page four
         $('#landing-page').addClass('display-none');
         $('#page1').addClass('display-none');
         $('#page2').addClass('display-none');
@@ -128,8 +121,8 @@ $(document).ready(function () {
         $('#page5').removeClass('d-flex');
     }
 
-    // Add a new function for loading page 5
     function loadPageFive() {
+        // Display page five
         $('#landing-page').addClass('display-none');
         $('#page1').addClass('display-none');
         $('#page2').addClass('display-none');
@@ -147,16 +140,14 @@ $(document).ready(function () {
     }
 
     function getGiftGrade() {
-        // get the "value" attribute off the clicked gift-grade buttons
+        // Get the "value" attribute of the clicked gift-grade buttons
         giftGrade = $(this).attr('data-value');
-        console.log("grade selected: " + giftGrade);
         loadPageTwo();
     };
 
     function getContinent() {
-        // get the "value" attribute off the clicked continent buttons
+        // Get the "value" attribute of the clicked continent buttons
         continent = $(this).attr('data-value');
-        console.log("continent selected: " + continent);
         calculateGift();
         loadPageThree();
     };
@@ -197,10 +188,6 @@ $(document).ready(function () {
                     calculatedGift = 'a PS5';
                     $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747479/gift-images/Cropped%20images/gift-exp-na3_pgepoo_expx1c.png');
                 }
-            } else if (giftGrade == '') {
-                console.log("no gift grade selected!");
-            } else {
-                console.log("Error! value of giftGrade is:" + giftGrade);
             };
         } else if (continent == "Europe") {
             if (giftGrade == "affordable") {
@@ -236,10 +223,6 @@ $(document).ready(function () {
                     calculatedGift = 'luxurious italian fashion accessories';
                     $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747490/gift-images/Cropped%20images/gift-exp-eu3_owmzqp_skjc9q.png');
                 }
-            } else if (giftGrade == '') {
-                console.log("no gift grade selected!");
-            } else {
-                console.log("Error! value of giftGrade is:" + giftGrade);
             };
         } else if (continent == "Asia") {
             if (giftGrade == "affordable") {
@@ -275,10 +258,6 @@ $(document).ready(function () {
                     calculatedGift = 'a High-quality silk kimono';
                     $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746515/gift-images/gift-exp-asia3_nlqvpa.png');
                 }
-            } else if (giftGrade == '') {
-                console.log("no gift grade selected!");
-            } else {
-                console.log("Error! value of giftGrade is:" + giftGrade);
             };
         } else if (continent == "South America") {
             if (giftGrade == "affordable") {
@@ -314,10 +293,6 @@ $(document).ready(function () {
                     calculatedGift = 'an exotic wood sculpture ethically sourced from naturally fallen trees in the Amazon';
                     $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746515/gift-images/gift-exp-sa3_b7gew8.png');
                 }
-            } else if (giftGrade == '') {
-                console.log("no gift grade selected!");
-            } else {
-                console.log("Error! value of giftGrade is:" + giftGrade);
             };
         } else if (continent == "Africa") {
             if (giftGrade == "affordable") {
@@ -353,10 +328,6 @@ $(document).ready(function () {
                     calculatedGift = 'an exquisite gold and leather watch';
                     $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702748966/gift-images/gift-exp-africa3_fifuhc.png');
                 }
-            } else if (giftGrade == '') {
-                console.log("no gift grade selected!");
-            } else {
-                console.log("Error! value of giftGrade is:" + giftGrade);
             };
         } else if (continent == "Oceania") {
             if (giftGrade == "affordable") {
@@ -392,10 +363,6 @@ $(document).ready(function () {
                     calculatedGift = 'just a big huge diamond';
                     $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747491/gift-images/Cropped%20images/gift-exp-aus3_jihoxl_vnyuip.png');
                 }
-            } else if (giftGrade == '') {
-                console.log("no gift grade selected!");
-            } else {
-                console.log("Error! value of giftGrade is:" + giftGrade);
             };
         } else if (continent == "Antarctica") {
             if (giftGrade == "affordable") {
@@ -431,24 +398,14 @@ $(document).ready(function () {
                     calculatedGift = 'Bespoke sculptures in the image of iconic findings from Antarctica';
                     $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/t_crop/v1702746507/gift-images/gift-exp-ant3_jvc8iv.png');
                 }
-            } else if (giftGrade == '') {
-                console.log("no gift grade selected!");
-            } else {
-                console.log("Error! value of giftGrade is:" + giftGrade);
             };
-        } else if (continent == '') {
-            console.log("Error, no country picked!");
-        } else {
-            console.log("Error! value of continent is:" + continent);
         };
     }
 
-    var giftImage = document.getElementById('giftImage');
-    var giftReceivedImage = document.getElementById('giftReceivedImage');
-    var giftDescription = document.getElementById('gift-description');
-    var thanks = document.getElementById('thanks');
-    var unbox = document.getElementById('unbox');
+    // Start app
+    loadLandingPage();
 
+    // Display received gift
     giftImage.addEventListener('click', function () {
         giftImage.style.display = 'none'; // Hide the original gift image
         giftReceivedImage.style.display = 'block';
@@ -457,13 +414,12 @@ $(document).ready(function () {
         unbox.innerHTML = "Here is what you recieved in return!"
     });
 
-
     // Display gift button
     $('#show-gift').on('click', function () {
         loadPageFive();
     });
 
-    // go back to "Home" button
+    // "Back to Home" button
     $('#return-home').on('click', function () {
         loadLandingPage();
         giftGrade = '';
@@ -479,7 +435,7 @@ $(document).ready(function () {
     $('.page-one-button').on('click', getGiftGrade);
     $('.page-two-button').on('click', getContinent);
 
-    // back buttons and styling
+    // Back buttons and styling
     function hoverBackButton() {
         $(this).children('.back-button-text').removeClass('display-none');
     }
@@ -501,7 +457,7 @@ $(document).ready(function () {
     // REMOVE SKIP BUTTON LATER
     $('#page-skip-button').on('click', loadPageFour);
 
-    //change the Santa image based on screen width
+    // Change the Santa image based on screen width
     function santaImageVisibility() {
         if ($(window).width() <= 768) {
             $('.santa-image').hide();
@@ -513,8 +469,6 @@ $(document).ready(function () {
         loadPageOne();
         santaImageVisibility();
     });
-    // resize to adjust the Santa image visibility
-    // $(window).resize(santaImageVisibility);
 
     // EmailJS script:
     emailjs.init('OsmjF1u10Sd3gcm-i');
@@ -523,6 +477,7 @@ $(document).ready(function () {
         this.send_gift.value = giftGrade
         this.received_gift.value = calculatedGift
         this.continent.value = continent
+        this.gift_image.value = $("#giftReceivedImage").prop("src")
         emailjs.sendForm('service_q75214s', 'contact_form', this)
             .then(function () {
                 loadPageFour();
