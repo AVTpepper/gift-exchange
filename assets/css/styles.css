@@ -143,7 +143,6 @@ p {
 
 .selection-option:hover {
     transform: scale(1.05);
-
 }
 
 .selection-option.selected {
@@ -217,8 +216,6 @@ p {
     position: absolute;
     top: 0;
     bottom: 11rem;
-    /* width: 100%; */
-    /*     width: 100%; */
     height: auto;
     z-index: -12;
 }
@@ -368,12 +365,11 @@ footer {
     }
 
     .lottie-flying-santa-background {
-        top: 22rem;
-        bottom: 0;
+        /* top: 0; */
+        /* bottom: 30rem; */
         width: 100%;
-        height: 57vh;
-        height: 57vh;
-        z-index: -12;
+        height: auto;
+        /* z-index: -12; */
     }
 
     .form-control {
