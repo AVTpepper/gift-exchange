@@ -8,7 +8,7 @@ $(document).ready(function () {
         renderer: "svg",
         loop: true,
         autoplay: true,
-        path: "assets/images/json/santa-delivery.json", // path to your animation file
+        path: "assets/images/json/santa-delivery.json",
     });
 
     lottie.loadAnimation({
@@ -34,8 +34,6 @@ $(document).ready(function () {
         autoplay: true,
         path: "assets/images/json/elves.json",
     });
-
-
 
     function loadLandingPage() {
         // makes sure landing page displays if page reloaded
@@ -148,7 +146,6 @@ $(document).ready(function () {
         $('#page5').addClass('d-flex');
     }
 
-
     function getGiftGrade() {
         // get the "value" attribute off the clicked gift-grade buttons
         giftGrade = $(this).attr('data-value');
@@ -163,7 +160,6 @@ $(document).ready(function () {
         calculateGift();
         loadPageThree();
     };
-
 
     function calculateGift() {
         let calculation = Math.round((Math.floor(Math.random() * 11)) / 100 * 20) + 1;
@@ -463,8 +459,6 @@ $(document).ready(function () {
         giftImage.style.display = 'block'; // Hide the original gift image
         giftReceivedImage.style.display = 'none';
     });
-
-
     $('#start-gifting-button').on('click', loadPageOne);
     $('.page-one-button').on('click', getGiftGrade);
     $('.page-two-button').on('click', getContinent);
@@ -488,6 +482,8 @@ $(document).ready(function () {
     $('.back-button').on('mouseenter', hoverBackButton);
     $('.back-button').on('mouseleave', unHoverBackButton);
 
+    // REMOVE SKIP BUTTON LATER
+    $('#page-skip-button').on('click', loadPageFour);
 
     //change the Santa image based on screen width
     function santaImageVisibility() {
@@ -497,40 +493,29 @@ $(document).ready(function () {
             $('.santa-image').show();
         }
     }
-
     $('#start-gifting-button').on('click', function () {
         loadPageOne();
         santaImageVisibility();
     });
-
     // resize to adjust the Santa image visibility
     $(window).resize(santaImageVisibility);
 
-
-
     // EmailJS script:
-    // (function () {
-    // https://dashboard.emailjs.com/admin/account
-    emailjs.init('eE_kGwavkK_CYEjee');
-    // })();
-
-    // window.onload = function () {
-        document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            this.send_gift.value = giftGrade
-            // this.received_gift.value = 
-            this.continent.value = continent
-            // these IDs from the previous steps
-            emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
-                .then(function () {
-                    loadPageFour();
-                    document.getElementById('contact-form').reset();
-                    $('#form-error-message').hide(); 
-                }, function (error) {
-                    console.log('FAILED...', error);
-                    $('#form-error-message').show();
-                    document.getElementById('contact-form').reset();
-                });
-        });
-    // }
+    emailjs.init('OsmjF1u10Sd3gcm-i');
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        this.send_gift.value = giftGrade
+        this.received_gift.value = calculatedGift
+        this.continent.value = continent
+        emailjs.sendForm('service_q75214s', 'contact_form', this)
+            .then(function () {
+                loadPageFour();
+                document.getElementById('contact-form').reset();
+                $('#form-error-message').hide();
+            }, function (error) {
+                console.log('FAILED...', error);
+                $('#form-error-message').show();
+                document.getElementById('contact-form').reset();
+            });
+    });
 });

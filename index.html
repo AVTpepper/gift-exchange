@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift Exchange</title>
+    <title>Be a Santa</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Bootstrap 5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -244,21 +244,26 @@
                                     required>
                             </div>
                             <input type="hidden" name="send_gift">
-                            <!-- We need to add the received_gift to the form so we can send it per mail too. -->
                             <input type="hidden" name="received_gift">
                             <input type="hidden" name="continent">
-                            
                             <!-- Submit button -->
                             <input type="submit" value="Send" class="button-21 margin-15" role="button">
-                        
-                            <div id="form-error-message" style="display: none;"">
+                            <div id="form-error-message" style="display: none;">
                                 <div class="alert  mt-3" style=" color: rgb(255, 1, 1);">
                                     <strong>Oops! Our elves are out of order at the moment. Try again later. </strong>                       
                                 </div>
                             <div id="elves-box"></div>
                         </div>
-
                         </form>
+                        <!-- REMOVE SKIP BUTTON LATER -->
+                        <div id="page-skip-button" class="skip-button">
+                            <span class="display-none back-button-text">
+                                Skip
+                            </span>
+                            <span class="button-arrow">
+                                <i class="button-arrow fa-solid fa-rotate-left"></i>
+                            </span>
+                        </div>
                         <!-- back button -->
                         <div id="page-three-back-button" class="back-button">
                             <span class="display-none back-button-text">
@@ -269,7 +274,6 @@
                             </span>
                         </div>
                     </div>
-                    
                     <!-- Page 4 -->
                     <div id="page4"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
