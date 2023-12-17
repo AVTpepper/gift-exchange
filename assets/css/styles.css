@@ -167,12 +167,14 @@ p {
     max-width: 180px !important;
     height: auto;
     padding: 15px;
+    transition: filter 0.3s ease; /* Add a smooth transition effect */
 }
 
-/* Hover effect on continents (lets find a better color for this maybe) */
-img.continent-image:hover {
-    background-color: rgba(215, 107, 7, 0.5);
-    border-radius: 35px;
+/* Hover effect on continents */
+.selection-option:hover  {
+    filter: grayscale(100%) sepia(100%) hue-rotate(180deg); /* Adjust the filter values as needed */
+   
+    
 }
 
 .continent-label {
@@ -582,4 +584,8 @@ footer {
 
 .display-none {
     display: none;
+}
+
+footer{
+    padding-top:50px;
 }
