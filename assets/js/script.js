@@ -52,6 +52,7 @@ $(document).ready(function () {
         // makes sure page one loads on start button click
         // or back button pressed
         $('#landing-page').addClass('display-none');
+        $('#page1').addClass('page-transition');
         $('#page1').removeClass('display-none');
         $('#page2').addClass('display-none');
         $('#page3').addClass('display-none');
@@ -71,6 +72,7 @@ $(document).ready(function () {
         // or back button pressed
         $('#landing-page').addClass('display-none');
         $('#page1').addClass('display-none');
+        $('#page2').addClass('page-transition');
         $('#page2').removeClass('display-none');
         $('#page3').addClass('display-none');
         $('#page5').addClass('display-none');
@@ -88,6 +90,7 @@ $(document).ready(function () {
         $('#landing-page').addClass('display-none');
         $('#page1').addClass('display-none');
         $('#page2').addClass('display-none');
+        $('#page3').addClass('page-transition');
         $('#page3').removeClass('display-none');
         $('#page4').addClass('display-none');
         $('#page5').addClass('display-none');
@@ -107,6 +110,7 @@ $(document).ready(function () {
         $('#page1').addClass('display-none');
         $('#page2').addClass('display-none');
         $('#page3').addClass('display-none');
+        $('#page4').addClass('page-transition');
         $('#page4').removeClass('display-none');
         $('#page5').addClass('display-none');
 
@@ -125,6 +129,7 @@ $(document).ready(function () {
         $('#page2').addClass('display-none');
         $('#page3').addClass('display-none');
         $('#page4').addClass('display-none');
+        $('#page5').addClass('page-transition');
         $('#page5').removeClass('display-none');
 
         $('#landing-page').removeClass('d-flex');
@@ -465,7 +470,10 @@ $(document).ready(function () {
         $(this).children('.back-button-text').addClass('display-none');
     }
 
-    $('#page-one-back-button').on('click', loadLandingPage);
+    $('#page-one-back-button').on('click', function () {
+        $('#landing-page').addClass('page-transition');
+        loadLandingPage();
+    });
     $('#page-two-back-button').on('click', loadPageOne);
     $('#page-three-back-button').on('click', loadPageTwo);
     $('#page-four-back-button').on('click', loadPageThree);
@@ -499,20 +507,20 @@ $(document).ready(function () {
     // })();
 
     // window.onload = function () {
-        document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            this.send_gift.value = giftGrade
-            // this.received_gift.value = 
-            this.continent.value = continent
-            // these IDs from the previous steps
-            emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
-                .then(function () {
-                    loadPageFour();
-                    document.getElementById('contact-form').reset();
-                }, function (error) {
-                    console.log('FAILED...', error);
-                    document.getElementById('contact-form').reset();
-                });
-        });
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        this.send_gift.value = giftGrade
+        // this.received_gift.value = 
+        this.continent.value = continent
+        // these IDs from the previous steps
+        emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
+            .then(function () {
+                loadPageFour();
+                document.getElementById('contact-form').reset();
+            }, function (error) {
+                console.log('FAILED...', error);
+                document.getElementById('contact-form').reset();
+            });
+    });
     // }
 });
