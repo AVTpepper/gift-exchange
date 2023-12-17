@@ -169,6 +169,20 @@ p {
     padding-left: 0.1rem;
 }
 
+/* REMOVE SKIP BUTTON LATER */
+.skip-button {
+    position: absolute;
+    overflow: hidden;
+    bottom: 17.5px;
+    left: 17.5px;
+    font-size: 1.2rem;
+    padding: 0 0.25rem;
+    border-radius: 1rem;
+    background-color: #00000070;
+    color: #ffffff70;
+    cursor: pointer;
+}
+
 /* Page 2 */
 
 .continent-image {
