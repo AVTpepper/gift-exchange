@@ -443,6 +443,21 @@ $(document).ready(function () {
         };
     }
 
+    var giftImage = document.getElementById('giftImage');
+    var giftReceivedImage = document.getElementById('giftReceivedImage');
+    var giftDescription = document.getElementById('gift-description');
+    var thanks = document.getElementById('thanks');
+    var unbox = document.getElementById('unbox');
+
+    giftImage.addEventListener('click', function () {
+        giftImage.style.display = 'none'; // Hide the original gift image
+        giftReceivedImage.style.display = 'block';
+        giftDescription.innerHTML = calculatedGift;
+        thanks.innerHTML = "Congratulations....😊";
+        unbox.innerHTML = "Here is what you recieved in return!"
+    });
+
+
     // Display gift button
     $('#show-gift').on('click', function () {
         loadPageFive();
@@ -453,11 +468,12 @@ $(document).ready(function () {
         loadLandingPage();
         giftGrade = '';
         continent = '';
-        alculatedGift = '';
-        var giftImage = document.getElementById('giftImage');
-        var giftReceivedImage = document.getElementById('giftReceivedImage');
+        calculatedGift = '';
         giftImage.style.display = 'block'; // Hide the original gift image
         giftReceivedImage.style.display = 'none';
+        thanks.innerHTML = "Thank you for using our virtual gift exchange.";
+        unbox.innerHTML = "Here is what you recieved in return! Click to unwrap the gift"
+        giftDescription.innerHTML = "";
     });
     $('#start-gifting-button').on('click', loadPageOne);
     $('.page-one-button').on('click', getGiftGrade);

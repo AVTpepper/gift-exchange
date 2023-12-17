@@ -121,8 +121,9 @@
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
                         <div id="lottie-flying-container" class="lottie-flying-santa-background"></div>
                         <img src="assets/images/be-a-santa.png" alt="Be-a-Santa" class="img-fluid be-a-santa-image">
-                        <h4 class="font-quicksand">This is your chance to exchange a virtual gift with someone around the world.</h5>
-                        <button id="start-gifting-button" class="button-21 margin-15" role="button">Gift</button>
+                        <h4 class="font-quicksand">This is your chance to exchange a virtual gift with someone around
+                            the world.</h5>
+                            <button id="start-gifting-button" class="button-21 margin-15" role="button">Gift</button>
                     </div>
                     <!-- Page 1 -->
                     <div id="page1"
@@ -170,14 +171,16 @@
                             <!-- North America -->
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-7 text-center order-lg-1 order-md-6 order-6">
                                 <div class="page-two-button selection-option" data-value="North America">
-                                    <img src="assets/images/map-na.png" alt="North America" class="img-fluid continent-image">
+                                    <img src="assets/images/map-na.png" alt="North America"
+                                        class="img-fluid continent-image">
                                     <p class="continent-label">North America</p>
                                 </div>
                             </div>
                             <!-- Europe -->
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-7 text-center order-lg-2 order-md-1 order-1">
                                 <div class="page-two-button selection-option" data-value="Europe">
-                                    <img src="assets/images/map-europe.png" alt="Europe" class="img-fluid continent-image">
+                                    <img src="assets/images/map-europe.png" alt="Europe"
+                                        class="img-fluid continent-image">
                                     <p class="continent-label">Europe</p>
                                 </div>
                             </div>
@@ -191,21 +194,24 @@
                             <!-- South America -->
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-7 text-center order-lg-4 order-md-2 order-7">
                                 <div class="page-two-button selection-option" data-value="South America">
-                                    <img src="assets/images/map-sa.png" alt="South America" class="img-fluid continent-image">
+                                    <img src="assets/images/map-sa.png" alt="South America"
+                                        class="img-fluid continent-image">
                                     <p class="continent-label">South America</p>
                                 </div>
                             </div>
                             <!-- Africa -->
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-7 text-center order-lg-5 order-md-3 order-2">
                                 <div class="page-two-button selection-option" data-value="Africa">
-                                    <img src="assets/images/map-africa.png" alt="Africa" class="img-fluid continent-image">
+                                    <img src="assets/images/map-africa.png" alt="Africa"
+                                        class="img-fluid continent-image">
                                     <p class="continent-label">Africa</p>
                                 </div>
                             </div>
                             <!-- Oceania -->
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-7 text-center order-lg-6 order-md-5 order-4">
                                 <div class="page-two-button selection-option" data-value="Oceania">
-                                    <img src="assets/images/map-oceania.png" alt="Oceania" class="img-fluid continent-image">
+                                    <img src="assets/images/map-oceania.png" alt="Oceania"
+                                        class="img-fluid continent-image">
                                     <p class="continent-label">Oceania</p>
                                 </div>
                             </div>
@@ -233,7 +239,8 @@
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
                         <!--User Info Form-->
                         <form id="contact-form">
-                            <h5 class="font-quicksand" style="color: #fff;">Please fill out the form below to receive a confirmation by email.</h5>
+                            <h5 class="font-quicksand" style="color: #fff;">Please fill out the form below to receive a
+                                confirmation by email.</h5>
                             <div class="form-group">
                                 <label for="name" class="margin-15">Name:</label>
                                 <input type="text" class="form-control margin-15" id="name" name="user_name" required>
@@ -250,10 +257,10 @@
                             <input type="submit" value="Send" class="button-21 margin-15" role="button">
                             <div id="form-error-message" style="display: none;">
                                 <div class="alert  mt-3" style=" color: rgb(255, 1, 1);">
-                                    <strong>Oops! Our elves are out of order at the moment. Try again later. </strong>                       
+                                    <strong>Oops! Our elves are out of order at the moment. Try again later. </strong>
                                 </div>
-                            <div id="elves-box"></div>
-                        </div>
+                                <div id="elves-box"></div>
+                            </div>
                         </form>
                         <!-- REMOVE SKIP BUTTON LATER -->
                         <div id="page-skip-button" class="skip-button">
@@ -291,8 +298,8 @@
                             </div>
                         </div>
                         <button id="show-gift" class="button-21">Show Gift</button>
-                         <!-- back button -->
-                         <div id="page-four-back-button" class="back-button">
+                        <!-- back button -->
+                        <div id="page-four-back-button" class="back-button">
                             <span class="display-none back-button-text">
                                 Go back
                             </span>
@@ -304,8 +311,8 @@
                     <!-- Page 5 -->
                     <div id="page5"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
-                        <h2 class="font-quicksand">Thank you for using our virtual gift exchange.</h2>
-                        <h5 class="font-quicksand">Here is what you recieved in return!</h5>
+                        <h2 class="font-quicksand" id="thanks">Thank you for using our virtual gift exchange.</h2>
+                        <h5 class="font-quicksand" id="unbox">Here is what you recieved in return! Click to unwrap the gift</h5>
                         <div class="row justify-content-center">
                             <!-- Gift Image -->
                             <!-- We need to find a way of selecting the correct gift here plus adjust the size of the image of the recieved gift -->
@@ -313,14 +320,17 @@
                             <div class="col-md-6 col-sm-8 text-center">
                                 <div class="selection-option d-flex justify-content-center" data-value="gift">
                                     <!-- incase animation gift doesnt look good just uncomment below img and comment div -->
-                                    <!-- <img src="assets/images/gift-box.png" alt="Gift" class="img-fluid" id="giftImage">    --> 
-                                    <div id="giftImage" class="gift-container"></div>
-
-                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="An image of the recieved gift"
-                                        class="img-fluid gift-received-img" style="display: none;"
-                                        id="giftReceivedImage">
+                                    <!-- <img src="assets/images/gift-box.png" alt="Gift" class="img-fluid" id="giftImage">    -->
+                                    <div class="gift-container">
+                                        <img src="assets/images/gift-box.png" alt="Gift" class="img-fluid"
+                                            id="giftImage">
+                                        <img src="assets/images/gifts/gift-exp-na1.png"
+                                            alt="An image of the recieved gift" class="img-fluid gift-received-img"
+                                            style="display: none;" id="giftReceivedImage">
+                                    </div>
                                 </div>
                             </div>
+                            <p id="gift-description"></p>
                         </div>
                         <button id="return-home" class="button-21">Return Home</button>
                     </div>
@@ -330,7 +340,8 @@
     </main>
     <!-- Footer Section -->
     <footer>
-        <p class="font-quicksand margin-15 white">&copy; 2023 Hackathon - Gift Exchange. All rights reserved. Developed by gift pull
+        <p class="font-quicksand margin-15 white">&copy; 2023 Hackathon - Gift Exchange. All rights reserved. Developed
+            by gift pull
             origin main.</p>
     </footer>
     <!-- Scripts -->
@@ -344,16 +355,7 @@
     <script src="assets/js/script.js"></script>
     <!-- Animation Gift -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var giftImage = document.getElementById('giftImage');
-            var giftReceivedImage = document.getElementById('giftReceivedImage');
-
-            giftImage.addEventListener('click', function () {
-                giftImage.style.display = 'none'; // Hide the original gift image
-                giftReceivedImage.classList.add('gift-fadeIn');
-                giftReceivedImage.style.display = 'block';
-            });
-        });
+        
     </script>
 </body>
 

@@ -69,7 +69,8 @@ p {
 #page2,
 #page3,
 #page4,
-#page5 {
+#page5,
+#landing-page {
     /* position needing to be clarified for back button positioning */
     position: relative;
     border: 2px solid rgb(155, 16, 16);
@@ -83,7 +84,7 @@ p {
     min-height: 100%;
 }
 
-#landing-page {
+/* #landing-page {
     border: 2px solid rgb(155, 16, 16);
     margin: 4rem;
     margin-top: 1rem;
@@ -94,7 +95,7 @@ p {
     color: aliceblue;
     width: 85%;
     min-height: 100%
-}
+} */
 
 #page1 h2,
 #page2 h2,
@@ -311,11 +312,15 @@ p {
     margin: 10%;
     border-radius: 35px;
     border: 3px solid rgb(215, 107, 7);
+    max-width: 200px;
+    height: auto;
+    margin:20px;
 }
 
 #giftImage {
-    /* padding: 25%; */
-    padding-bottom: 1%;
+    max-width: 200px;
+    height: auto;
+    margin:20px;
 }
 
 /* contact form */
@@ -328,7 +333,7 @@ p {
     min-width: 400px;
 }
 
-.font-quicksand{
+.font-quicksand {
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -405,6 +410,7 @@ footer {
         height: auto;
         max-width: 100%;
     }
+    
 }
 
 /* for larger devinces */
@@ -415,6 +421,7 @@ footer {
         width: 700px;
         max-width: 100%;
     }
+    
 }
 
 @media (max-width: 767px) {
