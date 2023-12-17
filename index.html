@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a hackathon page about virtual gift exchange.">
+    <meta name="keywords" content="gift exchange, gifting, christmas, santa, be santa, be a santa, holiday, giving, christmas spirit">
     <title>Be a Santa</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Bootstrap 5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- favicon image -->
+    <!-- Favicon Image -->
     <link rel="icon" href="assets/images/gift_box.png" type="image/x-icon">
 </head>
 
@@ -110,9 +112,8 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <!-- Image Column: Santa and Christmas Tree -->
+                <!-- Image Column: Santa and Christmas tree -->
                 <div class="col-md-4 d-md-flex flex-column align-items-center justify-content-center">
-                    <!-- <img src="assets/images/tree.png" alt="tree-image" class="img-fluid tree-image"> -->
                     <img src="assets/images/santa.png" alt="Santa" class="img-fluid santa-image">
                 </div>
                 <!-- Content Column: Contains the pages for the app -->
@@ -122,8 +123,8 @@
                         <div id="lottie-flying-container" class="lottie-flying-santa-background"></div>
                         <img src="assets/images/be-a-santa.png" alt="Be-a-Santa" class="img-fluid be-a-santa-image">
                         <h4 class="font-quicksand">This is your chance to exchange a virtual gift with someone around
-                            the world.</h5>
-                            <button id="start-gifting-button" class="button-21 margin-15" role="button">Gift</button>
+                            the world.</h4>
+                            <button id="start-gifting-button" class="button-21 margin-15">Gift</button>
                     </div>
                     <!-- Page 1 -->
                     <div id="page1"
@@ -153,7 +154,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- back button -->
+                        <!-- Back Button -->
                         <div id="page-one-back-button" class="back-button">
                             <span class="display-none back-button-text">
                                 Go back
@@ -224,7 +225,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- back button -->
+                        <!-- Back Button -->
                         <div id="page-two-back-button" class="back-button">
                             <span class="display-none back-button-text">
                                 Go back
@@ -239,8 +240,8 @@
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
                         <!--User Info Form-->
                         <form id="contact-form">
-                            <h5 class="font-quicksand" style="color: #fff;">Please fill out the form below to receive a
-                                confirmation by email.</h5>
+                            <h2 class="font-quicksand" style="color: #fff;">Please fill out the form below to receive a
+                                confirmation by email.</h2>
                             <div class="form-group">
                                 <label for="name" class="margin-15">Name:</label>
                                 <input type="text" class="form-control margin-15" id="name" name="user_name" required>
@@ -253,8 +254,9 @@
                             <input type="hidden" name="send_gift">
                             <input type="hidden" name="received_gift">
                             <input type="hidden" name="continent">
-                            <!-- Submit button -->
-                            <input type="submit" value="Send" class="button-21 margin-15" role="button">
+                            <input type="hidden" name="gift_image">
+                            <!-- Submit Button -->
+                            <input type="submit" value="Send" class="button-21 margin-15">
                             <div id="form-error-message" style="display: none;">
                                 <div class="alert  mt-3" style=" color: rgb(255, 1, 1);">
                                     <strong>Oops! Our elves are out of order at the moment. Try again later. </strong>
@@ -263,7 +265,7 @@
                             </div>
                         </form>
                         <!-- REMOVE SKIP BUTTON LATER -->
-                        <div id="page-skip-button" class="skip-button">
+                        <div id="page-skip-button" class="skip-button display-none">
                             <span class="display-none back-button-text">
                                 Skip
                             </span>
@@ -271,7 +273,7 @@
                                 <i class="button-arrow fa-solid fa-rotate-left"></i>
                             </span>
                         </div>
-                        <!-- back button -->
+                        <!-- Back Button -->
                         <div id="page-three-back-button" class="back-button">
                             <span class="display-none back-button-text">
                                 Go back
@@ -284,13 +286,12 @@
                     <!-- Page 4 -->
                     <div id="page4"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
-                        <h5 class="font-quicksand">A confirmation email has been sent.</h5>
+                        <h2 class="font-quicksand">A confirmation email has been sent.</h2>
                         <p class="font-quicksand">Please check your inbox.</p>
                         <div class="row justify-content-center">
-                            <!-- Green check Image -->
+                            <!-- Green Check Image -->
                             <div class="col-md-6 col-sm-12 text-center">
                                 <div class="selection-option" data-value="elf">
-                                    <!-- <img src="assets/images/green-mark.png" alt="Elf" class="img-fluid"> -->
                                     <div id="lottie-box" class="col-md-12">
                                         <div id="lottie-container"></div>
                                     </div>
@@ -298,7 +299,7 @@
                             </div>
                         </div>
                         <button id="show-gift" class="button-21">Show Gift</button>
-                        <!-- back button -->
+                        <!-- Back Button -->
                         <div id="page-four-back-button" class="back-button">
                             <span class="display-none back-button-text">
                                 Go back
@@ -315,12 +316,8 @@
                         <h5 class="font-quicksand" id="unbox">Here is what you recieved in return! Click to unwrap the gift</h5>
                         <div class="row justify-content-center">
                             <!-- Gift Image -->
-                            <!-- We need to find a way of selecting the correct gift here plus adjust the size of the image of the recieved gift -->
-                            <!-- We might want a closed box as image, instead of an opened one. And we might want to click the gift instead of the elve but that's up to y'all -->
                             <div class="col-md-6 col-sm-8 text-center">
                                 <div class="selection-option d-flex justify-content-center" data-value="gift">
-                                    <!-- incase animation gift doesnt look good just uncomment below img and comment div -->
-                                    <!-- <img src="assets/images/gift-box.png" alt="Gift" class="img-fluid" id="giftImage">    -->
                                     <div class="gift-container">
                                         <img src="assets/images/gift-box.png" alt="Gift" class="img-fluid"
                                             id="giftImage">
@@ -350,7 +347,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://kit.fontawesome.com/85f184e105.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.9/lottie.min.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- Animation Gift -->
