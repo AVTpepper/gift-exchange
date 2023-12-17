@@ -465,7 +465,6 @@ $(document).ready(function () {
     }
 
     $('#start-gifting-button').on('click', function () {
-    $('#start-gifting-button').on('click', function () {
         loadPageOne();
         santaImageVisibility();
     });
@@ -482,21 +481,20 @@ $(document).ready(function () {
     // })();
 
     // window.onload = function () {
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        this.send_gift.value = giftGrade;
-        // this.received_gift.value = 
-        this.continent.value = continent;
-        // these IDs from the previous steps
-            this.received_gift.value = calculatedGift;
-        emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
-            .then(function () {
-                loadPageFour();
-                document.getElementById('contact-form').reset();
-            }, function (error) {
-                console.log('FAILED...', error);
-                document.getElementById('contact-form').reset();
-            });
-    });
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            this.send_gift.value = giftGrade
+            // this.received_gift.value = 
+            this.continent.value = continent
+            // these IDs from the previous steps
+            emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
+                .then(function () {
+                    loadPageFour();
+                    document.getElementById('contact-form').reset();
+                }, function (error) {
+                    console.log('FAILED...', error);
+                    document.getElementById('contact-form').reset();
+                });
+        });
     // }
 });
