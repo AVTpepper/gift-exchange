@@ -517,6 +517,7 @@ footer {
     animation-fill-mode: forwards;
 }
 
+/* ScrollBar color */
 ::-webkit-scrollbar {
     width: 10px;
 }
