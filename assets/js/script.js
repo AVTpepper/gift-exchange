@@ -140,13 +140,13 @@ $(document).ready(function () {
             if (giftGrade == "affordable") {
                 if (calculation == 1) {
                     calculatedGift = 'some Scented candles';
-                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702746501/gift-images/gift-cheap-na1_gam5s9.png');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747477/gift-images/Cropped%20images/gift-cheap-na1_gam5s9_tagjyq.png');
                 } else if (calculation == 2) {
                     calculatedGift = 'a Handmade mug';
-                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702746502/gift-images/gift-cheap-na2_titthk.png');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747477/gift-images/Cropped%20images/gift-cheap-na2_titthk_qtv1ti.png');
                 } else if (calculation == 3) {
                     calculatedGift = 'a Neat American t-shirt';
-                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702746503/gift-images/gift-cheap-na3_eos2u8.png');
+                    $('#giftReceivedImage').prop('src', 'https://res.cloudinary.com/dpumbh2hj/image/upload/v1702747479/gift-images/Cropped%20images/gift-cheap-na3_eos2u8_kvbdnm.png');
                 }
             } else if (giftGrade == "moderate") {
                 if (calculation == 1) {
