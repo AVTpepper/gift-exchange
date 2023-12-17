@@ -11,6 +11,16 @@ $(document).ready(function () {
         path: "assets/images/json/santa-delivery.json", // path to your animation file
     });
 
+    lottie.loadAnimation({
+        container: document.getElementById("lottie-flying-container"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "assets/images/json/santa-flying-black.json",
+    });
+
+
+
     function loadLandingPage() {
         // makes sure landing page displays if page reloaded
         // or back button pressed
