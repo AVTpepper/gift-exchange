@@ -516,3 +516,22 @@ footer {
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
+
+/* ScrollBar color */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bf0d0d;
+    border-radius: 1px;
+}
+
+* {
+    scrollbar-color: #ffffff #bf0d0d;
+    scrollbar-width: thin;
+}
