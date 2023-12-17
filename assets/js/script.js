@@ -514,7 +514,7 @@ $(document).ready(function () {
         santaImageVisibility();
     });
     // resize to adjust the Santa image visibility
-    $(window).resize(santaImageVisibility);
+    // $(window).resize(santaImageVisibility);
 
     // EmailJS script:
     emailjs.init('OsmjF1u10Sd3gcm-i');
