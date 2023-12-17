@@ -563,3 +563,23 @@ footer {
     scrollbar-color: #ffffff #bf0d0d;
     scrollbar-width: thin;
 }
+
+/* Define a CSS class for the page transition */
+.page-transition {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.display-none {
+    display: none;
+}
