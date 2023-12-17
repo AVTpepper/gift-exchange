@@ -61,7 +61,8 @@ p {
 #page1,
 #page2,
 #page3,
-#page4 {
+#page4,
+#page5 {
     /* position needing to be clarified for back button positioning */
     position: relative;
     border: 2px solid rgb(155, 16, 16);
@@ -165,6 +166,7 @@ p {
 .continent-image {
     max-width: 160px;
     height: auto;
+    padding:15px;
 }
 
 /* Hover effect on continents (lets find a better color for this maybe) */
@@ -275,6 +277,13 @@ img.continent-image:hover {
     color: #fff;
 }
 
+#giftReceivedImage {
+    padding:10%;
+}
+
+#giftImage {
+    padding:25%;
+}
 
 /* contact form */
 
@@ -333,7 +342,8 @@ footer {
 @media (min-width: 992px) {
     .santa-image {
         padding-left: 50px;
-        height: 680px !important;
+        height: auto;
+        max-width: 100%;
     }
 }
 
@@ -341,7 +351,9 @@ footer {
 @media (min-width: 1200px) {
     .santa-image {
         padding-left: 50px;
-        height: 680px !important;
+        height: auto;
+        width:700px;
+        max-width: 100%;
     }
 }
 

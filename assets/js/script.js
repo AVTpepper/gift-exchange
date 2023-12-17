@@ -19,12 +19,14 @@ $(document).ready(function () {
         $('#page2').addClass('display-none');
         $('#page3').addClass('display-none');
         $('#page4').addClass('display-none');
+        $('#page5').addClass('display-none');
 
         $('#landing-page').addClass('d-flex');
         $('#page1').removeClass('d-flex');
         $('#page2').removeClass('d-flex');
         $('#page3').removeClass('d-flex');
         $('#page4').removeClass('d-flex');
+        $('#page5').removeClass('d-flex');
     }
     loadLandingPage();
 
@@ -36,12 +38,14 @@ $(document).ready(function () {
         $('#page2').addClass('display-none');
         $('#page3').addClass('display-none');
         $('#page4').addClass('display-none');
+        $('#page5').addClass('display-none');
 
         $('#landing-page').removeClass('d-flex');
         $('#page1').addClass('d-flex');
         $('#page2').removeClass('d-flex');
         $('#page3').removeClass('d-flex');
         $('#page4').removeClass('d-flex');
+        $('#page5').removeClass('d-flex');
     }
 
     function loadPageTwo() {
@@ -51,11 +55,13 @@ $(document).ready(function () {
         $('#page1').addClass('display-none');
         $('#page2').removeClass('display-none');
         $('#page3').addClass('display-none');
+        $('#page5').addClass('display-none');
 
         $('#landing-page').removeClass('d-flex');
         $('#page1').removeClass('d-flex');
         $('#page2').addClass('d-flex');
         $('#page3').removeClass('d-flex');
+        $('#page5').removeClass('d-flex');
     }
 
     function loadPageThree() {
@@ -66,12 +72,14 @@ $(document).ready(function () {
         $('#page2').addClass('display-none');
         $('#page3').removeClass('display-none');
         $('#page4').addClass('display-none');
+        $('#page5').addClass('display-none');
 
         $('#landing-page').removeClass('d-flex');
         $('#page1').removeClass('d-flex');
         $('#page2').removeClass('d-flex');
         $('#page3').addClass('d-flex');
         $('#page4').removeClass('d-flex');
+        $('#page5').removeClass('d-flex');
     }
 
     // Add a new function for loading page 4
@@ -82,12 +90,31 @@ $(document).ready(function () {
         $('#page2').addClass('display-none');
         $('#page3').addClass('display-none');
         $('#page4').removeClass('display-none');
+        $('#page5').addClass('display-none');
 
         $('#landing-page').removeClass('d-flex');
         $('#page1').removeClass('d-flex');
         $('#page2').removeClass('d-flex');
         $('#page3').removeClass('d-flex');
         $('#page4').addClass('d-flex');
+        $('#page5').removeClass('d-flex');
+    }
+
+    // Add a new function for loading page 5
+    function loadPageFive() {
+        $('#landing-page').addClass('display-none');
+        $('#page1').addClass('display-none');
+        $('#page2').addClass('display-none');
+        $('#page3').addClass('display-none');
+        $('#page4').addClass('display-none');
+        $('#page5').removeClass('display-none');
+
+        $('#landing-page').removeClass('d-flex');
+        $('#page1').removeClass('d-flex');
+        $('#page2').removeClass('d-flex');
+        $('#page3').removeClass('d-flex');
+        $('#page4').removeClass('d-flex');
+        $('#page5').addClass('d-flex');
     }
 
 
@@ -389,16 +416,28 @@ $(document).ready(function () {
         };
     }
 
-      // go back to "Home" button
-    $('#return-home').on('click', function() {
+    // Display gift button
+    $('#show-gift').on('click', function () {
+        loadPageFive();
+    });
+
+    // go back to "Home" button
+    $('#return-home').on('click', function () {
         loadLandingPage();
+        giftGrade = '';
+        continent = '';
+        alculatedGift = '';
+        var giftImage = document.getElementById('giftImage');
+        var giftReceivedImage = document.getElementById('giftReceivedImage');
+        giftImage.style.display = 'block'; // Hide the original gift image
+        giftReceivedImage.style.display = 'none';
     });
 
 
     $('#start-gifting-button').on('click', loadPageOne);
     $('.page-one-button').on('click', getGiftGrade);
     $('.page-two-button').on('click', getContinent);
-    
+
     // back buttons and styling
     function hoverBackButton() {
         $(this).children('.back-button-text').removeClass('display-none');
@@ -411,6 +450,7 @@ $(document).ready(function () {
     $('#page-one-back-button').on('click', loadLandingPage);
     $('#page-two-back-button').on('click', loadPageOne);
     $('#page-three-back-button').on('click', loadPageTwo);
+    $('#page-four-back-button').on('click', loadPageThree);
     $('.back-button').on('mouseenter', hoverBackButton);
     $('.back-button').on('mouseleave', unHoverBackButton);
 
@@ -424,7 +464,7 @@ $(document).ready(function () {
         }
     }
 
-    $('#start-gifting-button').on('click', function() {
+    $('#start-gifting-button').on('click', function () {
         loadPageOne();
         santaImageVisibility();
     });
@@ -436,18 +476,17 @@ $(document).ready(function () {
 
     // EmailJS script:
     // (function () {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init('eE_kGwavkK_CYEjee');
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init('eE_kGwavkK_CYEjee');
     // })();
 
     // window.onload = function () {
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
-            this.send_gift.value = giftGrade;
+            this.send_gift.value = giftGrade
             // this.received_gift.value = 
-            this.continent.value = continent;
+            this.continent.value = continent
             // these IDs from the previous steps
-            this.received_gift.value = calculatedGift;
             emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
                 .then(function () {
                     loadPageFour();
