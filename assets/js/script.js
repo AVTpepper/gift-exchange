@@ -27,6 +27,14 @@ $(document).ready(function () {
         path: "assets/images/json/giftImage.json",
     });
 
+    lottie.loadAnimation({
+        container: document.getElementById("elves-box"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "assets/images/json/elves.json",
+    });
+
 
 
     function loadLandingPage() {
@@ -509,8 +517,10 @@ $(document).ready(function () {
                 .then(function () {
                     loadPageFour();
                     document.getElementById('contact-form').reset();
+                    $('#form-error-message').hide(); 
                 }, function (error) {
                     console.log('FAILED...', error);
+                    $('#form-error-message').show();
                     document.getElementById('contact-form').reset();
                 });
         });

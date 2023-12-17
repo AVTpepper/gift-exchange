@@ -233,7 +233,7 @@
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
                         <!--User Info Form-->
                         <form id="contact-form">
-                            <p>Please fill out the form below to receive a confirmation by email.</p>
+                            <h5 style="color: #fff;">Please fill out the form below to receive a confirmation by email.</h5>
                             <div class="form-group">
                                 <label for="name" class="margin-15">Name:</label>
                                 <input type="text" class="form-control margin-15" id="name" name="user_name" required>
@@ -250,6 +250,14 @@
                             
                             <!-- Submit button -->
                             <input type="submit" value="Send" class="button-21 margin-15" role="button">
+                        
+                            <div id="form-error-message" style="display: none;"">
+                                <div class="alert  mt-3" style=" color: rgb(255, 1, 1);">
+                                    <strong>Oops! Our elves are out of order at the moment. Try again later. </strong>                       
+                                </div>
+                            <div id="elves-box"></div>
+                        </div>
+
                         </form>
                         <!-- back button -->
                         <div id="page-three-back-button" class="back-button">
