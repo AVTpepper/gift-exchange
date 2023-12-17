@@ -231,28 +231,6 @@
                     <!-- Page 3 -->
                     <div id="page3"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
-                        <h2>Thank you for using our virtual gift exchange.</h2>
-                        <h5>Here is what you recieved in return!</h5>
-                        <div class="row justify-content-center">
-                            <!-- Elf Image -->
-                            <div class="col-md-6 col-sm-12 text-center">
-                                <div class="selection-option" data-value="elf">
-                                    <img src="assets/images/elf.png" alt="Elf" class="img-fluid" id="elfImage">
-                                </div>
-                            </div>
-                            <!-- Gift Image -->
-                            <!-- We need to find a way of selecting the correct gift here plus adjust the size of the image of the recieved gift -->
-                            <!-- We might want a closed box as image, instead of an opened one. And we might want to click the gift instead of the elve but that's up to y'all -->
-                            <div class="col-md-6 col-sm-12 text-center">
-                                <div class="selection-option" data-value="gift">
-                                    <img src="assets/images/gift.png" alt="Gift" class="img-fluid" id="giftImage">
-                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="An image of the recieved gift"
-                                        class="img-fluid gift-received-img" style="display: none;"
-                                        id="giftReceivedImage">
-                                </div>
-                            </div>
-                            <p>Click the elf to unwrap your present!</p>
-                        </div>
                         <!--User Info Form-->
                         <form id="contact-form">
                             <p>Please fill out the form below to receive a confirmation by email.</p>
@@ -283,6 +261,7 @@
                             </span>
                         </div>
                     </div>
+                    
                     <!-- Page 4 -->
                     <div id="page4"
                         class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
@@ -298,6 +277,36 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <button id="show-gift" class="button-21">Show Gift</button>
+                         <!-- back button -->
+                         <div id="page-four-back-button" class="back-button">
+                            <span class="display-none back-button-text">
+                                Go back
+                            </span>
+                            <span class="button-arrow">
+                                <i class="button-arrow fa-solid fa-rotate-left"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Page 5 -->
+                    <div id="page5"
+                        class="d-flex flex-column justify-content-center align-items-center vertical-center-container">
+                        <h2>Thank you for using our virtual gift exchange.</h2>
+                        <h5>Here is what you recieved in return! Click to unbox</h5>
+                        <div class="row justify-content-center">
+                            <!-- Gift Image -->
+                            <!-- We need to find a way of selecting the correct gift here plus adjust the size of the image of the recieved gift -->
+                            <!-- We might want a closed box as image, instead of an opened one. And we might want to click the gift instead of the elve but that's up to y'all -->
+                            <div class="col-md-6 col-sm-12 text-center">
+                                <div class="selection-option" data-value="gift">
+                                    <img src="assets/images/gift-box.png" alt="Gift" class="img-fluid" id="giftImage">
+                                    <img src="assets/images/gifts/gift-exp-na1.png" alt="An image of the recieved gift"
+                                        class="img-fluid gift-received-img" style="display: none;"
+                                        id="giftReceivedImage">
+                                </div>
+                            </div>
+                            
                         </div>
                         <button id="return-home" class="button-21">Return Home</button>
                     </div>
@@ -322,12 +331,12 @@
     <!-- Animation Gift -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var elfImage = document.getElementById('elfImage');
             var giftImage = document.getElementById('giftImage');
             var giftReceivedImage = document.getElementById('giftReceivedImage');
 
-            elfImage.addEventListener('click', function () {
+            giftImage.addEventListener('click', function () {
                 giftImage.style.display = 'none'; // Hide the original gift image
+                giftReceivedImage.classList.add('gift-fadeIn');
                 giftReceivedImage.style.display = 'block';
             });
         });
