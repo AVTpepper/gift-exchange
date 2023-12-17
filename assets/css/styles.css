@@ -192,6 +192,17 @@ img.continent-image:hover {
     width: 600px;
 }
 
+.lottie-flying-santa-background {
+    position: absolute; 
+    top: 0;
+    bottom: 11rem;
+    /* width: 100%; */
+/*     width: 100%; */
+    height: auto;
+    z-index: -12;
+}
+
+
 .circle {
     margin-top: 5rem;
     display: flex;
@@ -284,7 +295,8 @@ img.continent-image:hover {
 }
 
 #giftImage {
-    padding: 25%;
+    /* padding: 25%; */
+    padding-bottom: 1%;
 }
 
 /* contact form */
@@ -309,8 +321,6 @@ footer {
 }
 
 
-
-
 /* responsivness */
 /* for small devinces */
 @media screen and (max-width: 768px) {
@@ -322,6 +332,15 @@ footer {
 
     .be-a-santa-image {
         width: 100%;
+    }
+
+    .lottie-flying-santa-background {
+        top: 22rem;
+        bottom: 0;
+        width: 100%;
+        height: 57vh;
+        height: 57vh;
+        z-index: -12;
     }
 
     .form-control {
