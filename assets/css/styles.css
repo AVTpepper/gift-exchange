@@ -328,27 +328,118 @@ p {
 }
 
 .form-control {
-    min-width: 400px;
+    margin: auto !important;
+    width: 75% !important;
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border: 3px solid rgb(155, 16, 16) !important;
+    border-radius: 10px !important;
+    color: white !important;
 }
+
+.form-control:focus {
+    box-shadow: 0 0 8px rgb(13, 213, 13) !important;
+    outline: none;
+    border: 0px !important;
+}
+
+label.margin-15 {
+    font-size: large;
+}
+
+
+@keyframes flash {
+
+    0%,
+    20% {
+        box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange;
+    }
+
+    20%,
+    40% {
+        box-shadow: 0 0 10px rgb(13, 213, 13), 0 0 20px rgb(13, 213, 13), 0 0 30px rgb(13, 213, 13);
+    }
+
+    40%,
+    60% {
+        box-shadow: 0 0 10px rgb(0, 153, 255), 0 0 20px rgb(0, 153, 255), 0 0 30px rgb(0, 153, 255);
+    }
+
+    60%,
+    80% {
+        box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+    }
+}
+
+.form-control.flash {
+    animation: flash 4s linear 2;
+}
+
+
 
 .font-quicksand {
     font-family: 'Quicksand', sans-serif;
 }
 
 @keyframes flash1 {
-    0%, 20% { color: orange; }
-    20%, 40% { color: rgb(13, 213, 13); }
-    40%, 60% { color: rgb(0, 153, 255); }
-    60%, 80% { color: yellow; }
-    80%, 100% { color: white; } /* Extended duration for white */
+
+    0%,
+    20% {
+        color: orange;
+    }
+
+    20%,
+    40% {
+        color: rgb(13, 213, 13);
+    }
+
+    40%,
+    60% {
+        color: rgb(0, 153, 255);
+    }
+
+    60%,
+    80% {
+        color: yellow;
+    }
+
+    80%,
+    100% {
+        color: white;
+    }
+
+    /* Extended duration for white */
 }
 
 @keyframes flash2 {
-    0%, 20% { color: rgb(13, 213, 13); }
-    20%, 40% { color: rgb(0, 153, 255); }
-    40%, 60% { color: yellow; }
-    60%, 80% { color: orange; }
-    80%, 100% { color: white; } /* Extended duration for white */
+
+    0%,
+    20% {
+        color: rgb(13, 213, 13);
+    }
+
+    20%,
+    40% {
+        color: rgb(0, 153, 255);
+    }
+
+    40%,
+    60% {
+        color: yellow;
+    }
+
+    60%,
+    80% {
+        color: orange;
+    }
+
+    80%,
+    100% {
+        color: white;
+    }
+
+    /* Extended duration for white */
 }
 
 .flash1 {
@@ -360,16 +451,24 @@ p {
 }
 
 @keyframes glow {
-    0%, 20% {
+
+    0%,
+    20% {
         text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange;
     }
-    20%, 40% {
+
+    20%,
+    40% {
         text-shadow: 0 0 10px rgb(13, 213, 13), 0 0 20px rgb(13, 213, 13), 0 0 30px rgb(13, 213, 13);
     }
-    40%, 60% {
+
+    40%,
+    60% {
         text-shadow: 0 0 10px rgb(0, 153, 255), 0 0 20px rgb(0, 153, 255), 0 0 30px rgb(0, 153, 255);
     }
-    60%, 80% {
+
+    60%,
+    80% {
         text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
     }
 }
@@ -413,7 +512,12 @@ footer {
 
     .form-control {
         min-width: auto;
-        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 3px solid rgb(155, 16, 16);
+        border-radius: 10px;
     }
 
     #page1,
