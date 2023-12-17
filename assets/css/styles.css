@@ -166,7 +166,7 @@ p {
 .continent-image {
     max-width: 160px;
     height: auto;
-    padding:15px;
+    padding: 15px;
 }
 
 /* Hover effect on continents (lets find a better color for this maybe) */
@@ -278,11 +278,11 @@ img.continent-image:hover {
 }
 
 #giftReceivedImage {
-    padding:10%;
+    padding: 10%;
 }
 
 #giftImage {
-    padding:25%;
+    padding: 25%;
 }
 
 /* contact form */
@@ -352,7 +352,7 @@ footer {
     .santa-image {
         padding-left: 50px;
         height: auto;
-        width:700px;
+        width: 700px;
         max-width: 100%;
     }
 }
@@ -497,4 +497,22 @@ footer {
     left: 90%;
     -webkit-animation-delay: 3s, 1.5s;
     animation-delay: 3s, 1.5s
+}
+
+
+/* Gift Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.gift-fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
