@@ -164,20 +164,20 @@ p {
 /* Page 2 */
 
 .continent-image {
-    max-width: 160px;
+    max-width: 180px !important;
     height: auto;
     padding: 15px;
 }
 
 /* Hover effect on continents (lets find a better color for this maybe) */
 img.continent-image:hover {
-    background-color: rgba(255, 136, 0, 0.5);
+    background-color: rgba(215, 107, 7, 0.5);
     border-radius: 35px;
 }
 
 .continent-label {
     font-size: 1rem;
-    color: rgb(255, 255, 255)fff;
+    color: rgb(215, 107, 7)fff;
     margin-top: 0.5rem;
 }
 
@@ -278,7 +278,9 @@ img.continent-image:hover {
 }
 
 #giftReceivedImage {
-    padding: 10%;
+    margin: 10%;
+    border-radius: 35px;
+    border: 3px solid rgb(215, 107, 7);
 }
 
 #giftImage {
@@ -331,7 +333,8 @@ footer {
     #page2,
     #page3,
     #page4,
-    #landing-page {
+    #landing-page,
+    #page5 {
         margin: 2rem 1rem;
         width: auto;
         height: auto;
@@ -354,6 +357,12 @@ footer {
         height: auto;
         width: 700px;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .continent-image {
+        max-width: 100% !important;
     }
 }
 
