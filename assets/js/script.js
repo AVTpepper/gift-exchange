@@ -27,6 +27,14 @@ $(document).ready(function () {
         path: "assets/images/json/giftImage.json",
     });
 
+    lottie.loadAnimation({
+        container: document.getElementById("elves-box"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "assets/images/json/elves.json",
+    });
+
 
 
     function loadLandingPage() {
@@ -507,20 +515,22 @@ $(document).ready(function () {
     // })();
 
     // window.onload = function () {
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        this.send_gift.value = giftGrade
-        // this.received_gift.value = 
-        this.continent.value = continent
-        // these IDs from the previous steps
-        emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
-            .then(function () {
-                loadPageFour();
-                document.getElementById('contact-form').reset();
-            }, function (error) {
-                console.log('FAILED...', error);
-                document.getElementById('contact-form').reset();
-            });
-    });
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            this.send_gift.value = giftGrade
+            // this.received_gift.value = 
+            this.continent.value = continent
+            // these IDs from the previous steps
+            emailjs.sendForm('service_lcrv0bl', 'contact_form', this)
+                .then(function () {
+                    loadPageFour();
+                    document.getElementById('contact-form').reset();
+                    $('#form-error-message').hide(); 
+                }, function (error) {
+                    console.log('FAILED...', error);
+                    $('#form-error-message').show();
+                    document.getElementById('contact-form').reset();
+                });
+        });
     // }
 });
