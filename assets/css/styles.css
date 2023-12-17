@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
 
 /* Override defaults */
@@ -13,11 +15,19 @@ body {
     background: radial-gradient(circle, rgb(230, 9, 9) 0%, rgb(31, 2, 2) 100%);
     width: 100vw;
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
     line-height: 1.6;
     color: #ffffff;
 
 }
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
 
 /* Header Section */
 header {
@@ -41,9 +51,6 @@ main {
     width: 100%;
 }
 
-h1 {
-    font-family: 'Chewy', arial, sans-serif;
-}
 
 p {
     color: rgb(255, 136, 0);
@@ -104,6 +111,7 @@ p {
 
 #page2 h2 {
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -167,13 +175,10 @@ p {
     max-width: 180px !important;
     height: auto;
     padding: 15px;
+    transition: filter 0.3s ease;
+    /* Add a smooth transition effect */
 }
 
-/* Hover effect on continents (lets find a better color for this maybe) */
-img.continent-image:hover {
-    background-color: rgba(215, 107, 7, 0.5);
-    border-radius: 35px;
-}
 
 .continent-label {
     font-size: 1rem;
@@ -193,11 +198,11 @@ img.continent-image:hover {
 }
 
 .lottie-flying-santa-background {
-    position: absolute; 
+    position: absolute;
     top: 0;
     bottom: 11rem;
     /* width: 100%; */
-/*     width: 100%; */
+    /*     width: 100%; */
     height: auto;
     z-index: -12;
 }
@@ -309,6 +314,10 @@ img.continent-image:hover {
     min-width: 400px;
 }
 
+.font-quicksand{
+    font-family: 'Quicksand', sans-serif;
+}
+
 /* Footer Section */
 footer {
     bottom: 0;
@@ -328,6 +337,10 @@ footer {
         height: 400px !important;
         max-width: 100%;
         padding-left: 0;
+    }
+
+    .img-option {
+        max-width: 150px;
     }
 
     .be-a-santa-image {
@@ -358,6 +371,17 @@ footer {
         width: auto;
         height: auto;
     }
+
+    #page1 h2,
+    #page2 h2,
+    #page3 h2 {
+        font-size: 19px;
+
+    }
+
+    p {
+        font-size: 13px;
+    }
 }
 
 /* For standard laptops */
@@ -381,7 +405,7 @@ footer {
 
 @media (max-width: 767px) {
     .continent-image {
-        max-width: 100% !important;
+        max-width: 70% !important;
     }
 }
 
@@ -582,4 +606,8 @@ footer {
 
 .display-none {
     display: none;
+}
+
+footer {
+    padding: 50px 30px 0 30px;
 }
