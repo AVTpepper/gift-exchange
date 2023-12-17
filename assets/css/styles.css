@@ -196,7 +196,7 @@ img.continent-image:hover {
     position: absolute; 
     top: 0;
     bottom: 11rem;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     z-index: -12;
 }
@@ -292,7 +292,8 @@ img.continent-image:hover {
 }
 
 #giftImage {
-    padding: 25%;
+    /* padding: 25%; */
+    padding-bottom: 1%;
 }
 
 /* contact form */
@@ -317,8 +318,6 @@ footer {
 }
 
 
-
-
 /* responsivness */
 /* for small devinces */
 @media screen and (max-width: 768px) {
@@ -336,7 +335,7 @@ footer {
         top: 22rem;
         bottom: 0;
         width: 100%;
-        height: 400px;
+        height: 57vh;
         z-index: -12;
     }
 
