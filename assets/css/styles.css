@@ -10,7 +10,6 @@
 }
 
 /* General Styles */
-
 body {
     background: radial-gradient(circle, rgb(230, 9, 9) 0%, rgb(31, 2, 2) 100%);
     width: 100vw;
@@ -27,7 +26,6 @@ h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
 }
-
 
 /* Header Section */
 header {
@@ -51,7 +49,6 @@ main {
     width: 100%;
 }
 
-
 p {
     color: rgb(255, 136, 0);
 }
@@ -71,7 +68,6 @@ p {
 #page4,
 #page5,
 #landing-page {
-    /* position needing to be clarified for back button positioning */
     position: relative;
     border: 2px solid rgb(155, 16, 16);
     margin-top: 1rem;
@@ -83,19 +79,6 @@ p {
     width: 90%;
     min-height: 100%;
 }
-
-/* #landing-page {
-    border: 2px solid rgb(155, 16, 16);
-    margin: 4rem;
-    margin-top: 1rem;
-    padding: 2rem;
-    border-radius: 35px;
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.324);
-    background-color: rgba(14, 2, 2, 0.3);
-    color: aliceblue;
-    width: 85%;
-    min-height: 100%
-} */
 
 #page1 h2,
 #page2 h2,
@@ -113,7 +96,6 @@ p {
 #page2 h2 {
     padding-bottom: 2rem;
 }
-
 
 .img-option {
     border: 3px solid rgb(215, 107, 7);
@@ -182,32 +164,10 @@ p {
     cursor: pointer;
 }
 
-/* Page 2 */
-
-.continent-image {
-    max-width: 180px !important;
-    height: auto;
-    padding: 15px;
-    transition: filter 0.3s ease;
-    /* Add a smooth transition effect */
-}
-
-
-.continent-label {
-    font-size: 1rem;
-    color: rgb(215, 107, 7)fff;
-    margin-bottom: 0;
-}
-
-
-
-
-/* landing page */
+/* Landing page */
 .santa-image {
     padding-left: 50px;
-    /* height: 680px ; */
 }
-
 .be-a-santa-image {
     width: 600px;
 }
@@ -218,18 +178,6 @@ p {
     bottom: 11rem;
     height: auto;
     z-index: -12;
-}
-
-
-.circle {
-    margin-top: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
 }
 
 .align {
@@ -267,6 +215,20 @@ p {
     white-space: nowrap;
 }
 
+/* Other pages */
+.continent-image {
+    max-width: 180px !important;
+    height: auto;
+    padding: 15px;
+    transition: filter 0.3s ease;
+}
+
+.continent-label {
+    font-size: 1rem;
+    color: rgb(215, 107, 7);
+    margin-bottom: 0;
+}
+
 .margin-15 {
     margin-top: 15px;
 }
@@ -294,7 +256,6 @@ p {
 
 .square {
     border-radius: 0;
-    /* Removes the rounded corners */
 }
 
 .button-21:focus:not(:active) {
@@ -321,8 +282,7 @@ p {
     margin: 20px;
 }
 
-/* contact form */
-
+/* Contact form */
 #contact-form {
     padding: 1.5rem;
 }
@@ -473,6 +433,97 @@ label.margin-15 {
     }
 }
 
+@keyframes flash1 {
+
+    0%,
+    20% {
+        color: orange;
+    }
+
+    20%,
+    40% {
+        color: rgb(13, 213, 13);
+    }
+
+    40%,
+    60% {
+        color: rgb(0, 153, 255);
+    }
+
+    60%,
+    80% {
+        color: yellow;
+    }
+
+    80%,
+    100% {
+        color: white;
+    }
+
+    /* Extended duration for white */
+}
+
+@keyframes flash2 {
+
+    0%,
+    20% {
+        color: rgb(13, 213, 13);
+    }
+
+    20%,
+    40% {
+        color: rgb(0, 153, 255);
+    }
+
+    40%,
+    60% {
+        color: yellow;
+    }
+
+    60%,
+    80% {
+        color: orange;
+    }
+
+    80%,
+    100% {
+        color: white;
+    }
+
+    /* Extended duration for white */
+}
+
+.flash1 {
+    animation: flash1 4s infinite, glow 4s infinite;
+}
+
+.flash2 {
+    animation: flash2 4s infinite, glow 4s infinite;
+}
+
+@keyframes glow {
+
+    0%,
+    20% {
+        text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange;
+    }
+
+    20%,
+    40% {
+        text-shadow: 0 0 10px rgb(13, 213, 13), 0 0 20px rgb(13, 213, 13), 0 0 30px rgb(13, 213, 13);
+    }
+
+    40%,
+    60% {
+        text-shadow: 0 0 10px rgb(0, 153, 255), 0 0 20px rgb(0, 153, 255), 0 0 30px rgb(0, 153, 255);
+    }
+
+    60%,
+    80% {
+        text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+    }
+}
+
 /* Footer Section */
 footer {
     bottom: 0;
@@ -481,12 +532,13 @@ footer {
     padding: .5rem;
     word-wrap: break-word;
     white-space: normal;
-    color: #ffffff
+    color: #ffffff;
+    padding: 50px 30px 0 30px;
 }
 
 
-/* responsivness */
-/* for small devinces */
+/* Responsivness */
+/* For small devices */
 @media screen and (max-width: 768px) {
     .santa-image {
         height: 400px !important;
@@ -503,11 +555,8 @@ footer {
     }
 
     .lottie-flying-santa-background {
-        /* top: 0; */
-        /* bottom: 30rem; */
         width: 100%;
         height: auto;
-        /* z-index: -12; */
     }
 
     .form-control {
@@ -553,7 +602,7 @@ footer {
 
 }
 
-/* for larger devinces */
+/* For larger devinces */
 @media (min-width: 1200px) {
     .santa-image {
         padding-left: 50px;
@@ -572,7 +621,7 @@ footer {
 
 
 
-/* customizable snowflake styling */
+/* Customizable snowflake styling */
 .snowflake {
     color: #fff;
     font-size: 1em;
@@ -712,7 +761,6 @@ footer {
     animation-delay: 3s, 1.5s
 }
 
-
 /* Gift Animation */
 @keyframes fadeIn {
     from {
@@ -767,8 +815,4 @@ footer {
 
 .display-none {
     display: none;
-}
-
-footer {
-    padding: 50px 30px 0 30px;
 }
