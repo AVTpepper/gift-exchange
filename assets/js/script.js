@@ -452,7 +452,10 @@ $(document).ready(function () {
         $(this).children('.back-button-text').addClass('display-none');
     }
 
-    $('#page-one-back-button').on('click', loadLandingPage);
+    $('#page-one-back-button').on('click', function () {
+        $('#landing-page').addClass('page-transition');
+        loadLandingPage();
+    });
     $('#page-two-back-button').on('click', loadPageOne);
     $('#page-three-back-button').on('click', loadPageTwo);
     $('#page-four-back-button').on('click', loadPageThree);
